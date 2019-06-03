@@ -1,0 +1,126 @@
+.page {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 40px;
+}
+
+.content {
+	width: 1155px;
+
+}
+
+.select-head {
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.letter-list {
+	flex-grow: 1;
+	display: flex;
+	align-items: center;
+	font-size: 16px;
+	font-weight: bold;
+	color: rgba(0, 0, 0, 1);
+}
+
+.letter-item {
+	cursor: pointer;
+	margin-left: 20px;
+}
+
+.letter-item:active {
+	color: #1053FF;
+	font-size: 24px;
+}
+
+.icon-menu {
+	font-size: 16px;
+	color: #A39DA4;
+
+}
+
+.icon-menu a:hover {
+	color: #1053FF;
+}
+
+.icon-menu a:active {
+	color: #0032FF;
+}
+
+.artist-list {
+	width: 1185px;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 50px;
+}
+
+.artist-item {
+	margin-right: 26px;
+	margin-bottom: 31px;
+}
+
+.artist-pic {
+	width: 270px;
+	height: 270px;
+	position: relative;
+	cursor: pointer;
+}
+
+.artist-pic img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+.artist-layer {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.3);
+	top: 0;
+	left: 0;
+	display: none;
+	z-index: 10;
+}
+
+.artist-pic:hover {
+	border: 3px solid #1053FF;
+}
+
+.artist-name {
+	margin-top: 17px;
+	font-size: 18px;
+	font-weight: 300;
+	color: rgba(0, 0, 0, 1);
+	padding-left: 13px;
+}
+
+.artist-name-list {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 50px;
+}
+
+.artist-name-item {
+	cursor: pointer;
+	width: 33.3%;
+	flex-shrink: 0;
+	font-size: 16px;
+	font-weight: 300;
+	color: rgba(0, 0, 0, 1);
+	line-height:45px;
+	flex-shrink: 0;
+}
+.artist-name-item:hover{
+	color: #1053FF;
+	font-size: 20px;
+	
+}
+.artist-name-item:active{
+	color: #0032FF;
+}

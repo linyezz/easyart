@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="../css/index.css" />
+		<link rel="stylesheet" type="text/css" href="../css/header.css" />
+		<link rel="stylesheet" type="text/css" href="../css/font.css" />
+		<link rel="stylesheet" type="text/css" href="../css/procude_detail.css" />
+		<link rel="stylesheet" type="text/css" href="../css/artist_thumbnails.css" />
+		<script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<title>艺术家缩略图</title>
+	</head>
+	<body>
+		<div class="header">
+			<div class="logo1"><img src="../img/home/logo-2@2x.png"></div>
+			<ul class="icon-list">
+				<li class="icon-item">&#xe945;</li>
+				<li class="icon-item icon-selected">&#xe912;</li>
+				<li class="icon-item">&#xe90d;</li>
+				<li class="icon-item">&#xe904;</li>
+				<li class="icon-item">&#xe934;</li>
+				<li class="icon-item">&#xe938;</li>
+			</ul>
+		</div>
+
+		<div class="page">
+			<div class="content">
+				<div class="select-head">
+					<ul class="letter-list">
+						<li class="letter-title">A-Z</li>
+						<li class="letter-item">A</li>
+						<li class="letter-item">B</li>
+						<li class="letter-item">C</li>
+						<li class="letter-item">D</li>
+						<li class="letter-item">E</li>
+						<li class="letter-item">F</li>
+						<li class="letter-item">G</li>
+						<li class="letter-item">H</li>
+						<li class="letter-item">I</li>
+						<li class="letter-item">J</li>
+						<li class="letter-item">K</li>
+						<li class="letter-item">L</li>
+						<li class="letter-item">M</li>
+						<li class="letter-item">N</li>
+						<li class="letter-item">O</li>
+						<li class="letter-item">P</li>
+						<li class="letter-item">Q</li>
+						<li class="letter-item">R</li>
+						<li class="letter-item">S</li>
+						<li class="letter-item">T</li>
+						<li class="letter-item">V</li>
+						<li class="letter-item">U</li>
+						<li class="letter-item">W</li>
+						<li class="letter-item">X</li>
+						<li class="letter-item">Y</li>
+						<li class="letter-item">Z</li>
+						<li class="letter-title">#</li>
+					</ul>
+					<div class="icon-menu"><a href="">&#xe90e;</a></div>
+				</div>
+				<ul class="artist-list">
+					<li class="artist-item">
+						<div class="artist-pic">
+							<img src="../img/demo/633ff41f99e1fb309de51c18cb4e352a.jpg" >
+							<div class="artist-layer"></div>
+						</div>
+						<p class="artist-name">艺术家名称</p>
+					</li>
+					<li class="artist-item">
+						<div class="artist-pic">
+							<img src="../img/demo/633ff41f99e1fb309de51c18cb4e352a.jpg" >
+							<div class="artist-layer"></div>
+						</div>
+						<p class="artist-name">艺术家名称</p>
+					</li>
+					<li class="artist-item">
+						<div class="artist-pic">
+							<img src="../img/demo/633ff41f99e1fb309de51c18cb4e352a.jpg" >
+							<div class="artist-layer"></div>
+						</div>
+						<p class="artist-name">艺术家名称</p>
+					</li>
+					<li class="artist-item">
+						<div class="artist-pic">
+							<img src="../img/demo/633ff41f99e1fb309de51c18cb4e352a.jpg" >
+							<div class="artist-layer"></div>
+						</div>
+						<p class="artist-name">艺术家名称</p>
+					</li>
+					<li class="artist-item">
+						<div class="artist-pic">
+							<img src="../img/demo/633ff41f99e1fb309de51c18cb4e352a.jpg" >
+							<div class="artist-layer"></div>
+						</div>
+						<p class="artist-name">艺术家名称</p>
+					</li>
+					<li class="artist-item">
+						<div class="artist-pic">
+							<img src="../img/demo/633ff41f99e1fb309de51c18cb4e352a.jpg" >
+							<div class="artist-layer"></div>
+						</div>
+						<p class="artist-name">艺术家名称</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(function(){
+				$('.artist-pic').on('mouseover',function(){
+					 $(this).find('.artist-layer').css('display', 'block')
+				})
+				$('.artist-pic').on('mouseout', function() {
+				  $(this).find('.artist-layer').css('display', 'none')
+				}) 
+			})
+		</script>
+	</body>
+</html>
