@@ -40,6 +40,7 @@
   margin-left: 3.75rem;
   cursor: pointer;
   font-size: 28px;
+  user-select:none;
 }
 .b-icon-item{
   margin-left: 60px;
@@ -47,12 +48,16 @@
   cursor: pointer;
   font-size: 28px;
   color: #FFFFFF;
+  user-select:none;
 }
 .icon-item:hover{
   color: #1053FF;
 }
 .b-icon-item:hover{
   color: #1053FF;
+}
+.icon-item:active{
+  color: #003wff;
 }
 .icon-img1 {
   width: 28px;
