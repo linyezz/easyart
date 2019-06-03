@@ -1,0 +1,23 @@
+.page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.production-show{
+  width: 1164px;
+
+}
+.main-show{
+  display: flex; 
+}
+.main-img{
+  width: 802px;
+  height: 526px;
+  margin-right: 53px;
+}
+.main-img img{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  object-fit: cover;
+}

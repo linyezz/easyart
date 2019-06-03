@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/index.css" />
+    <link rel="stylesheet" type="text/css" href="../css/search.css" />
+    <script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/anime.min.js" type="text/javascript" charset="utf-8"></script>
+    <title></title>
+  </head>
+  <body>
+    <div class="pages">
+      <ul class="tags-list">
+        <li class="tag-item clicked" name="nav-production">作品</li>
+        <li class="tag-item" name="nav-artist">艺术家</li>
+      </ul>
+
+      <section class="nav-content nav-production">
+        <div class="search-input-item">
+          <input type="text" name="" id="" value="" class="search-inpt" />
+          <img src="../img/search/sousuo@2x.png" alt="" class="search-icon">
+        </div>
+
+        <div class="search-detail">
+          <p class="detail-name">分类</p>
+          <ul class="classify-list">
+            <li class="classify-item">油画/丙烯</li>
+            <li class="classify-item">水彩</li>
+            <li class="classify-item">版画</li>
+            <li class="classify-item">摄影</li>
+            <li class="classify-item">综合材料</li>
+            <li class="classify-item">书法</li>
+            <li class="classify-item">国画</li>
+            <li class="classify-item">摄影</li>
+          </ul>
+        </div>
+        <div class="search-detail">
+          <p class="detail-name">尺寸</p>
+          <ul class="size-list">
+            <li class="size-item"></li>
+            <li class="size-item"></li>
+            <li class="size-item"></li>
+            <li class="size-item"></li>
+            <li class="size-item"></li>
+          </ul>
+          <ul class="size-list">
+            <li class="size-num">0</li>
+            <li class="size-num">50cm</li>
+            <li class="size-num">100cm</li>
+            <li class="size-num">150cm</li>
+            <li class="size-num">200mx</li>
+            <li class="size-num">max</li>
+
+          </ul>
+        </div>
+      </section>
+      <section class="nav-content nav-artist">
+        <div class="search-input-item" style="margin-bottom: 0;">
+          <input type="text" name="" id="" value="" class="search-inpt" />
+          <img src="../img/search/sousuo@2x.png" alt="" class="search-icon">
+        </div>
+        <div class="search-history">
+          <p class="history-tip">搜索记录</p>
+          <div class="history-item">dsad</div>
+          <div class="history-item">sfsdfds</div>
+          <div class="history-item">sdfsdfdsf</div>
+        </div>
+      </section>
+    </div>
+    <script type="text/javascript">
+      $(function() {
+        $('.tag-item').on('click', function() {
+          $(this).siblings().removeClass('clicked')
+          $(this).addClass('clicked');
+        })
+        $('.classify-item').on('click', function() {
+          if ($(this).hasClass('classify-clicked')) {
+            $(this).removeClass('classify-clicked');
+          } else {
+            $(this).addClass('classify-clicked');
+          }
+        })
+        $('.size-item').on('click', function() {
+          $(this).siblings().removeClass('size-click')
+          if ($(this).hasClass('size-click')) {
+            $(this).removeClass('size-click');
+          } else {
+
+            $(this).addClass('size-click');
+          }
+        })
+        $('.history-item').on('click', function() {
+          $(this).siblings().removeClass('history-clicked')
+          if ($(this).hasClass('history-clicked')) {
+            $(this).removeClass('history-clicked');
+          } else {
+          
+            $(this).addClass('history-clicked');
+          }
+        })
+      })
+    </script>
+  </body>
+</html>

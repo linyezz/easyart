@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>作品集</title>
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/index.css" />
+    <link rel="stylesheet" type="text/css" href="../css/header.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/font.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/production.css"/>
+    
+    <script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+    <div class="header">
+      <div class="logo1"><img src="../img/home/logo-2@2x.png"></div>
+      <ul class="icon-list">
+        <li class="icon-item">&#xe945;</li>
+        <li class="icon-item">&#xe912;</li>
+        <li class="icon-item">&#xe90d;</li>
+        <li class="icon-item">&#xe904;</li>
+        <li class="icon-item">&#xe934;</li>
+        <li class="icon-item">&#xe938;</li>
+      </ul>
+    </div>
+    
+    <div class="content">
+      <div class="menu">
+        <div class="menu-tip">
+          <span>之前所选的名称</span>
+          <span class="icon-menu-tip-close">&#xe902;</span>
+        </div>
+        <ul class="menu-list">
+          <li class="icon-menu-item">
+            &#xe92f;
+          </li>
+          <li class="icon-menu-item">
+            &#xe908;
+          </li>
+          <li class="icon-menu-item">
+            &#xe92b;
+          </li>
+        </ul>
+      </div>
+      
+      <div class="production water-production">
+        <div class="production-item">
+          <div class="production-hover">
+            <p class="production-intro"></p>
+          </div>
+          <img class="masonry-img" src="../img/demo/05f1f00435f195d6052ab3e3b28afc0b.jpg" >
+        </div>
+        <div class="production-item">
+          <img class="masonry-img" src="../img/base/4.jpg" >
+        </div>
+        <div class="production-item">
+          <img class="masonry-img" src="../img/base/0.jpg" >
+        </div>
+        <div class="production-item">
+          <img class="masonry-img" src="../img/demo/1e999a33f0ef626aacfdfed913195fb2.jpg" >
+        </div>
+        <div class="production-item">
+          <img class="masonry-img" src="../img/demo/633ff41f99e1fb309de51c18cb4e352a.jpg" >
+        </div>
+        <div class="production-item">
+          <img class="masonry-img" src="../img/demo/ad17fdd5773b547506a006891afdeb0a.jpg" >
+        </div>
+        <div class="production-item">
+          <img class="masonry-img" src="../img/demo/7ebb91463b96f48fd2b3031e4af1486d.jpg" >
+        </div>
+        <div  class="production-item">
+          <img class="masonry-img" src="../img/base/4.jpg" >
+        </div>
+        <div  class="production-item">
+          <img class="masonry-img" src="../img/demo/ad17fdd5773b547506a006891afdeb0a.jpg" >
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      $(function(){
+        $('.production-item').on('mouseover', function() {
+          $(this).find('.production-hover').css('display', 'block')
+        })
+        $('.production-item').on('mouseout', function() {
+          $(this).find('.production-hover').css('display', 'none')
+        }) 
+      })
+    </script>
+	</body>
+</html>

@@ -1,0 +1,9 @@
+.home{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex
+}
+.page{
+  -webkit-transform: translate(1,1);
+          transform: translate(1,1)
+}

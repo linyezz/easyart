@@ -1,0 +1,85 @@
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  top: 0;
+  padding: 33px 66px;
+  padding: 2.0625rem 4.125rem;
+}
+.logo1 {
+
+  -webkit-box-flex: 1;
+
+      -ms-flex-positive: 1;
+
+          flex-grow: 1;
+}
+
+.logo1 img {
+  width: 227px;
+  width: 14.1875rem;
+  height: 30px;
+  height: 1.875rem;
+}
+
+.icon-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.icon-item {
+  margin-left: 60px;
+  margin-left: 3.75rem;
+  cursor: pointer;
+  font-size: 28px;
+}
+.b-icon-item{
+  margin-left: 60px;
+  margin-left: 3.75rem;
+  cursor: pointer;
+  font-size: 28px;
+  color: #FFFFFF;
+}
+.icon-item:hover{
+  color: #1053FF;
+}
+.b-icon-item:hover{
+  color: #1053FF;
+}
+.icon-img1 {
+  width: 28px;
+  height: 26px;
+}
+
+.icon-img2 {
+  width: 24px;
+  height: 28px;
+}
+
+.icon-img3 {
+  width: 27px;
+  height: 26px;
+}
+
+.icon-img4 {
+  width: 27px;
+  height: 23px;
+}
+
+.icon-img5 {
+  width: 25px;
+  height: 24px;
+}
+
+.icon-img6 {
+  width: 25px;
+  height: 14px;
+}
