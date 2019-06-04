@@ -63,3 +63,7 @@ body {
   flex-direction: column;
   align-items: center; */
 }
+/* 字体icon无法被选中 */
+*[class^="icon"]{
+  user-select:none;
+}

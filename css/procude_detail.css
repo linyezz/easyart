@@ -5,6 +5,10 @@
   margin-top: 100px;
 }
 
+.content {
+  width: 1164px;
+}
+
 .production-show {
   width: 1164px;
 
@@ -13,7 +17,7 @@
 .main-show {
   display: flex;
   height: 526px;
-  width:100%
+  width: 100%
 }
 
 .main-img {
@@ -52,6 +56,7 @@
 .at-name {
   font-size: 14px;
 }
+
 .enshrine {
   font-size: 12px;
   font-family: PingFangSC-Light;
@@ -60,12 +65,134 @@
   line-height: 25px;
   cursor: pointer;
 }
+
 .icon-enshrine {
   font-size: 20px;
   color: #a39da4;
   vertical-align: middle;
-  
+
 }
-.thumbnail-item{
-  
+
+.thumbnail {
+  width: 100%;
+  position: relative;
+  margin-top: 57px;
+  padding-left: 32px;
+}
+
+.thumbnail-slick {
+  /* width: 92%; */
+  display: flex;
+  align-items: center;
+  /* position: relative; */
+
+
+
+}
+
+.thumbnail-list {
+  width: 95%;
+  overflow: hidden;
+}
+
+.thumbnail-slick::-webkit-scrollbar {
+  display: none;
+}
+
+.icon-last {
+  font-size: 32px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 0;
+  cursor: pointer;
+  width: 32px;
+}
+
+.icon-next {
+  font-size: 32px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  cursor: pointer;
+  width: 32px;
+  right: 0px;
+}
+
+.icon-last:hover,
+.icon-next:hover {
+  color: #1053FF;
+}
+
+.icon-last:active,
+.icon-next:active {
+  color: #0032FF;
+}
+
+.thumbnail-item {
+  width: 160px;
+  height: 160px;
+  margin-right: 20px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.thumbnail-item:last-child {
+  margin-right: 0;
+}
+
+.thumbnail-item:hover,
+.thumbnail-selected {
+  border: 3px solid #1053FF;
+}
+
+.thumbnail-item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.production-info {
+  width: 100%;
+  border-bottom: 2px solid #A39DA4;
+  padding: 70px 50px 36px 50px;
+  position: relative;
+}
+
+.info-tip {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  line-height: 22px;
+  margin-bottom: 33px;
+}
+.intro-box{
+  height: 50px;
+  overflow: hidden;
+}
+.show-intro{
+  width: 100%;
+  font-size:14px;
+  font-weight:400;
+  color:rgba(0,0,0,1);
+  line-height:25px;
+  position: relative;
+  overflow: hidden;
+  transition: height 0.5s;
+   
+}
+.icon-show-intro{
+  width: 24px;
+  font-size: 12px;
+   position: absolute;
+   bottom: 36px;
+   right: 0;
+   cursor: pointer;
+}
+.icon-show-intro:hover{
+  color: #1053FF;
+}
+.icon-show-intro:active{
+  color: #0032FF;
 }
