@@ -111,16 +111,91 @@
         <div class="production-info">
           <p class="info-tip">作品描述</p>
           <div class="intro-box">
-          <div class="show-intro">此系列作品属于常见的那一类“题材”与特别方式的结合。
-          在照片上，颜料和笔触以强烈的态势出现，画笔隐藏甚至否定了照片引以为荣的那些细节。
-          于是，Sylvie的作品交给我们另外的一种方式，观看、体会那些画笔的痕迹，能够将极为平凡甚至琐碎、
-          并不入画的风景赋予“如画”的气质，重要的还在于画面不住地唤醒此前经历过的某一打发点大师傅撒了空间哈所带来的卡是否哭啥
-          奥术大师饭卡上解放号护肤阿道夫哈福哈库发哦好就爱好舒服苦海日安徽烦恼快拉上你疯了看见爱上你法拉盛房价平稳
-          奥斯卡积分女司机咖啡的看法代理费hi欧冠和偶发咖啡哈猴年后发阿双方均按时交年费胡浩帆；鄿爱上了回复是否会顺风使帆
-          </div>
+            <div class="show-intro">此系列作品属于常见的那一类“题材”与特别方式的结合。
+              在照片上，颜料和笔触以强烈的态势出现，画笔隐藏甚至否定了照片引以为荣的那些细节。
+              于是，Sylvie的作品交给我们另外的一种方式，观看、体会那些画笔的痕迹，能够将极为平凡甚至琐碎、
+              并不入画的风景赋予“如画”的气质，重要的还在于画面不住地唤醒此前经历过的某一打发点大师傅撒了空间哈所带来的卡是否哭啥
+              奥术大师饭卡上解放号护肤阿道夫哈福哈库发哦好就爱好舒服苦海日安徽烦恼快拉上你疯了看见爱上你法拉盛房价平稳
+              奥斯卡积分女司机咖啡的看法代理费hi欧冠和偶发咖啡哈猴年后发阿双方均按时交年费胡浩帆；鄿爱上了回复是否会顺风使帆
+            </div>
           </div>
           <div class="icon-show-intro" name="down">&#xe927;</div>
         </div>
+
+        <div class="head-menu">
+          <p class="name">艺术家名称</p>
+          <ul class="icon-menue">
+            <li class="icon-menue-item">&#xe91e;</li>
+            <li class="icon-menue-item">&#xe918;</li>
+          </ul>
+        </div>
+
+        <ul class="pd-list">
+          <li class="pd-item">
+
+            <img src="../img/demo/633ff41f99e1fb309de51c18cb4e352a.jpg">
+            <div class="artist-layer">
+              <p class="pd-name">作品名称</p>
+              <p class="pd-intro">czcdcdczdcz</p>
+            </div>
+
+          </li>
+          <li class="pd-item">
+
+            <img src="../img/demo/633ff41f99e1fb309de51c18cb4e352a.jpg">
+            <div class="artist-layer">
+              <p class="pd-name">作品名称</p>
+              <p class="pd-intro">czcdcdczdcz</p>
+            </div>
+
+          </li>
+          <li class="pd-item">
+
+            <img src="../img/demo/633ff41f99e1fb309de51c18cb4e352a.jpg">
+            <div class="artist-layer">
+              <p class="pd-name">作品名称</p>
+              <p class="pd-intro">czcdcdczdcz</p>
+            </div>
+
+          </li>
+          <li class="pd-item">
+
+            <img src="../img/demo/633ff41f99e1fb309de51c18cb4e352a.jpg">
+            <div class="artist-layer">
+              <p class="pd-name">作品名称</p>
+              <p class="pd-intro">czcdcdczdcz</p>
+            </div>
+
+          </li>
+          <li class="pd-item">
+
+            <img src="../img/demo/633ff41f99e1fb309de51c18cb4e352a.jpg">
+            <div class="artist-layer">
+              <p class="pd-name">作品名称</p>
+              <p class="pd-intro">czcdcdczdcz</p>
+            </div>
+
+          </li>
+          <li class="pd-item">
+
+            <img src="../img/demo/633ff41f99e1fb309de51c18cb4e352a.jpg">
+            <div class="artist-layer">
+              <p class="pd-name">作品名称</p>
+              <p class="pd-intro">czcdcdczdcz</p>
+            </div>
+
+          </li>
+          <li class="pd-item">
+
+            <img src="../img/demo/633ff41f99e1fb309de51c18cb4e352a.jpg">
+            <div class="artist-layer">
+              <p class="pd-name">作品名称</p>
+              <p class="pd-intro">czcdcdczdcz</p>
+            </div>
+
+          </li>
+        </ul>
+
       </div>
     </div>
     <script type="text/javascript">
@@ -130,8 +205,8 @@
         var thumbnailWidth = $('.thumbnail-slick').width()
         var thumbnailSelected = $('.thumbnail-item').eq(0);
         var autoHeight = $('.show-intro').height();
-        $('.show-intro').css('height','50px');
-        $('.intro-box').css('height','auto')
+        $('.show-intro').css('height', '50px');
+        $('.intro-box').css('height', 'auto')
         //缩略图切换
         $('.thumbnail-item').on('click', function() {
           $(this).addClass('thumbnail-selected').siblings().removeClass('thumbnail-selected');
@@ -187,29 +262,33 @@
             })
           }
         })
-        
-        $('.icon-show-intro').on('click',function(){
-          var status=$(this).attr('name');
-          if(status=='down'){
-            $(this).attr('name','up')
-            
+         //显示全部文字
+        $('.icon-show-intro').on('click', function() {
+          var status = $(this).attr('name');
+          if (status == 'down') {
+            $(this).attr('name', 'up')
+
             $('.show-intro').css({
-              'height':autoHeight+'px',
-              
+              'height': autoHeight + 'px',
+
             })
-            $(this).css('transform','rotate(180deg)')
-          }else if(status=='up'){
-            $(this).attr('name','down')
+            $(this).css('transform', 'rotate(180deg)')
+          } else if (status == 'up') {
+            $(this).attr('name', 'down')
             $('.show-intro').css({
-              'height':'50px',
-              
-              })
-              $(this).css('transform','rotate(0deg)')
+              'height': '50px',
+
+            })
+            $(this).css('transform', 'rotate(0deg)')
           }
         })
+        $('.pd-item').on('mouseover',function(){
+        	 $(this).find('.artist-layer').css('display', 'block')
+        })
+        $('.pd-item').on('mouseout', function() {
+          $(this).find('.artist-layer').css('display', 'none')
+        }) 
       })
-      
-      
     </script>
   </body>
 </html>

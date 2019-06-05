@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/index.css" />
+    <link rel="stylesheet" type="text/css" href="../css/home.css" />
+    <link rel="stylesheet" type="text/css" href="../css/font.css" />
+    <link rel="stylesheet" type="text/css" href="../css/header.css" />
+    <link rel="stylesheet" type="text/css" href="../css/activity_home.css"/>
+    <script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/anime.min.js" type="text/javascript" charset="utf-8"></script>
+    <title>活动主页</title>
+  </head>
+  <body>
+    <section class="home-page">
+    <div class="home-head">
+      <div class="logo1"><img src="../img/home/logo@2x.png"></div>
+      <ul class="icon-list">
+        <li class="b-icon-item">&#xe945;</li>
+        <li class="b-icon-item">&#xe912;</li>
+        <li class="b-icon-item">&#xe90d;</li>
+        <li class="b-icon-item">&#xe904;</li>
+        <li class="b-icon-item">&#xe934;</li>
+        <li class="b-icon-item">&#xe938;</li>
+      </ul>
+    </div>
+    <div class="activity-layer"></div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img class="home-img" src="../img/home/0.jpg"></div>
+          <div class="swiper-slide"><img class="home-img" src="../img/home/1.jpg"></div>
+          <div class="swiper-slide"><img class="home-img" src="../img/home/2.jpg"></div>
+          <div class="swiper-slide"><img class="home-img" src="../img/home/3.jpg"></div>
+          <div class="swiper-slide"><img class="home-img" src="../img/home/4.jpg"></div>
+          <div class="swiper-slide"><img class="home-img" src="../img/home/5.jpg"></div>
+        </div>
+      </div>
+    </section>
+    <div class="content">
+      
+    </div>
+    <script type="text/javascript">
+      $(function(){
+        var mySwiper = new Swiper('.swiper-container', {
+          initialSlide: 0,
+          autoplay: {
+            delay: 6000,
+            stopOnLastSlide: false,
+            disableOnInteraction: true,
+          },
+          speed: 500,
+          loop: true,
+        })
+      })
+      
+    </script>
+  </body>
+</html>

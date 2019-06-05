@@ -158,6 +158,7 @@
   border-bottom: 2px solid #A39DA4;
   padding: 70px 50px 36px 50px;
   position: relative;
+  margin-bottom:60px ;
 }
 
 .info-tip {
@@ -195,4 +196,85 @@
 }
 .icon-show-intro:active{
   color: #0032FF;
+}
+
+
+.head-menu {
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.name {
+	font-size: 24px;
+	font-weight: bold;
+	color: #000000;
+	flex-grow: 1;
+}
+
+.icon-menue {
+	display: flex;
+	align-items: center;
+}
+
+.icon-menue-item {
+	font-size: 24px;
+	color: #A39DA4;
+	cursor: pointer;
+	margin-left: 62px;
+}
+
+.icon-menue-item:hover {
+	color: #1053FF;
+}
+
+.pd-list {
+	width: 1185px;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 44px;
+}
+
+.pd-item {
+	width: 270px;
+	height: 270px;
+	margin-right: 26px;
+	margin-bottom: 31px;
+	position: relative;
+	cursor: pointer;
+}
+
+.pd-item img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+.artist-layer {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.9);
+	top: 0;
+	left: 0;
+	display: none;
+	z-index: 10;
+	padding: 50px 38px;
+}
+
+.pd-item:hover {
+	border: 3px solid #1053FF;
+}
+
+.pd-name {
+	font-size: 20px;
+	color: rgba(0, 0, 0, 1);
+	line-height: 22px;
+}
+.pd-intro{
+	font-size: 12px;
+	color: rgba(0, 0, 0, 1);
+	line-height: 22px;
 }

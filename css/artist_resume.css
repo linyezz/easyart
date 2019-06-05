@@ -1,0 +1,44 @@
+.page {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content {
+  width: 600px;
+  padding-top: 226px;
+}
+
+.resume-detail {
+  font-weight: 300;
+  color: rgba(0, 0, 0, 1);
+  line-height: 22px;
+  width: 100%;
+  border-bottom: 2px solid #A39DA4;
+  padding-bottom:  44px;
+  margin-top: 60px;
+}
+.info-detail{
+  width: 100%;
+  margin-top: 34px;
+  
+}
+.info-item{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  line-height:22px;
+}
+.info-key{
+  width: 20%;
+  
+}
+.info-value{
+  flex-grow: 1;
+  
+}

@@ -2,7 +2,14 @@
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 a,
@@ -41,7 +48,7 @@ input:focus::-webkit-input-placeholder {
 input {
   background: none;
   -webkit-appearance: none;
-  caret-color:#1053ff;
+  caret-color: #1053ff;
 }
 
 textarea {
@@ -59,11 +66,40 @@ i {
 }
 
 body {
- /* display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center; */
 }
+
 /* 字体icon无法被选中 */
-*[class^="icon"]{
-  user-select:none;
+*[class^="icon"] {
+  user-select: none;
+}
+
+.p-bold {
+  font-weight: bold;
+}
+
+.headline1 {
+  font-size: 24px;
+}
+
+.headline2 {
+  font-size: 20px;
+}
+
+.headline3 {
+  font-size: 18px;
+}
+
+.p-content1 {
+  font-size: 16px;
+}
+
+.p-content2 {
+  font-size: 14px;
+}
+
+.p-content3 {
+  font-size: 12px;
 }
