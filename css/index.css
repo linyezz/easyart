@@ -74,8 +74,14 @@ body {
 /* 字体icon无法被选中 */
 *[class^="icon"] {
   user-select: none;
+  cursor: pointer;
 }
-
+*[class^="icon"]:hover{
+  color: #1053FF;
+}
+*[class^="icon"]:active{
+  color: #0032FF;
+}
 .p-bold {
   font-weight: bold;
 }

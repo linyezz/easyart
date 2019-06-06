@@ -4,10 +4,9 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="../css/swiper.min.css" />
     <link rel="stylesheet" type="text/css" href="../css/index.css" />
-    <link rel="stylesheet" type="text/css" href="../css/home.css" />
     <link rel="stylesheet" type="text/css" href="../css/font.css" />
     <link rel="stylesheet" type="text/css" href="../css/header.css" />
-    <link rel="stylesheet" type="text/css" href="../css/activity_home.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/activity_home.css" />
     <script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="../js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="../js/anime.min.js" type="text/javascript" charset="utf-8"></script>
@@ -15,19 +14,19 @@
   </head>
   <body>
     <section class="home-page">
-    <div class="home-head">
-      <div class="logo1"><img src="../img/home/logo@2x.png"></div>
-      <ul class="icon-list">
-        <li class="b-icon-item">&#xe945;</li>
-        <li class="b-icon-item">&#xe912;</li>
-        <li class="b-icon-item">&#xe90d;</li>
-        <li class="b-icon-item">&#xe904;</li>
-        <li class="b-icon-item">&#xe934;</li>
-        <li class="b-icon-item">&#xe938;</li>
-      </ul>
-    </div>
-    <div class="activity-layer"></div>
-    <div class="swiper-container">
+      <div class="home-head">
+        <div class="logo1"><img src="../img/home/logo@2x.png"></div>
+        <ul class="icon-list">
+          <li class="b-icon-item">&#xe945;</li>
+          <li class="b-icon-item">&#xe912;</li>
+          <li class="b-icon-item">&#xe90d;</li>
+          <li class="b-icon-item">&#xe904;</li>
+          <li class="b-icon-item">&#xe934;</li>
+          <li class="b-icon-item">&#xe938;</li>
+        </ul>
+      </div>
+      <div class="activity-layer"></div>
+      <div class="swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide"><img class="home-img" src="../img/home/0.jpg"></div>
           <div class="swiper-slide"><img class="home-img" src="../img/home/1.jpg"></div>
@@ -36,13 +35,69 @@
           <div class="swiper-slide"><img class="home-img" src="../img/home/4.jpg"></div>
           <div class="swiper-slide"><img class="home-img" src="../img/home/5.jpg"></div>
         </div>
+        <div class="swiper-pagination"></div>
       </div>
+
     </section>
     <div class="content">
-      
+      <div class="menue-list">
+        <span class="icon-menu">&#xe920;</span>
+      </div>
+      <ul class="artist-list">
+        <li class="artist-item">
+          <div class="artist-pic">
+            <img src="../img/demo/633ff41f99e1fb309de51c18cb4e352a.jpg">
+            <div class="artist-layer">
+              
+            </div>
+          </div>
+          <p class="artist-name">展览名称</p>
+          <p class="activit-time">展览地址，2018.11.06 - 2018.11.10</p>
+        </li>
+        <li class="artist-item">
+          <div class="artist-pic">
+            <img src="../img/demo/633ff41f99e1fb309de51c18cb4e352a.jpg">
+            <div class="artist-layer"></div>
+          </div>
+          <p class="artist-name">艺术家名称</p>
+          <p class="activit-time">展览地址，2018.11.06 - 2018.11.10</p>
+        </li>
+        <li class="artist-item">
+          <div class="artist-pic">
+            <img src="../img/demo/633ff41f99e1fb309de51c18cb4e352a.jpg">
+            <div class="artist-layer"></div>
+          </div>
+          <p class="artist-name">艺术家名称</p>
+          <p class="activit-time">展览地址，2018.11.06 - 2018.11.10</p>
+        </li>
+        <li class="artist-item">
+          <div class="artist-pic">
+            <img src="../img/demo/633ff41f99e1fb309de51c18cb4e352a.jpg">
+            <div class="artist-layer"></div>
+          </div>
+          <p class="artist-name">艺术家名称</p>
+          <p class="activit-time">展览地址，2018.11.06 - 2018.11.10</p>
+        </li>
+        <li class="artist-item">
+          <div class="artist-pic">
+            <img src="../img/demo/633ff41f99e1fb309de51c18cb4e352a.jpg">
+            <div class="artist-layer"></div>
+          </div>
+          <p class="artist-name">艺术家名称</p>
+          <p class="activit-time">展览地址，2018.11.06 - 2018.11.10</p>
+        </li>
+        <li class="artist-item">
+          <div class="artist-pic">
+            <img src="../img/demo/633ff41f99e1fb309de51c18cb4e352a.jpg">
+            <div class="artist-layer"></div>
+          </div>
+          <p class="artist-name">艺术家名称</p>
+          <p class="activit-time">展览地址，2018.11.06 - 2018.11.10</p>
+        </li>
+      </ul>
     </div>
     <script type="text/javascript">
-      $(function(){
+      $(function() {
         var mySwiper = new Swiper('.swiper-container', {
           initialSlide: 0,
           autoplay: {
@@ -52,9 +107,17 @@
           },
           speed: 500,
           loop: true,
+          pagination: {
+            el: '.swiper-pagination',
+          },
         })
+        $('.artist-pic').on('mouseover',function(){
+					 $(this).find('.artist-layer').css('display', 'block')
+				})
+				$('.artist-pic').on('mouseout', function() {
+				  $(this).find('.artist-layer').css('display', 'none')
+				}) 
       })
-      
     </script>
   </body>
 </html>

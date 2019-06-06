@@ -12,6 +12,70 @@
   background-image:linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0)) ;
 }
 .content{
-  margin-top: 45px;
+  margin: 45px auto 0 auto;
+  width: 1230px;
   
+}
+.swiper-container{
+  width: 100%;
+  height: 100%;
+}
+.menue-list{
+  width: 100%;
+  padding-right: 24px;
+  font-size: 24px;
+  text-align: right;
+  margin-bottom: 43px;
+}
+.artist-list {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 50px;
+}
+
+.artist-item {
+	margin-right: 26px;
+	margin-bottom: 29px;
+  width: 382px;
+}
+
+.artist-pic {
+	width: 382px;
+	height: 242px;
+	position: relative;
+	cursor: pointer;
+  margin-bottom: 17px;
+}
+
+.artist-pic img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+.artist-layer {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.3);
+	top: 0;
+	left: 0;
+	display: none;
+	z-index: 10;
+  
+}
+
+.artist-pic:hover {
+	border: 3px solid #1053FF;
+}
+.artist-name{
+  font-size: 16px;
+  line-height: 25px;
+}
+.activit-time{
+   font-size: 14px;
+  line-height: 25px;
 }
