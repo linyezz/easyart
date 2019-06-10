@@ -34,7 +34,9 @@
 
           flex-grow: 1;
 }
-
+.logo1 span{
+  font-size: 28px;
+}
 .logo1 img {
   width: 227px;
   width: 14.1875rem;

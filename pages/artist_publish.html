@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/index.css" />
+    <link rel="stylesheet" type="text/css" href="../css/font.css" />
+    <link rel="stylesheet" type="text/css" href="../css/header.css" />
+    <link rel="stylesheet" type="text/css" href="../css/publish.css" />
+    <script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/anime.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/Sortable.min.js" type="text/javascript" charset="utf-8"></script>
+    <title>发布</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo1"><span class="icon-logo_b_1"></span></div>
+      <ul class="icon-list">
+        <li class="icon-item">&#xe945;</li>
+        <li class="icon-item ">&#xe912;</li>
+        <li class="icon-item icon-selected">&#xe90d;</li>
+        <li class="icon-item">&#xe904;</li>
+        <li class="icon-item">&#xe934;</li>
+        <li class="icon-item">&#xe938;</li>
+      </ul>
+    </div>
+
+    <section class="pages">
+      <div class="content">
+        <div class="publish-title">
+          <p class="art-name headline1">艺术家姓名</p>
+          <a href="" class="back-icon">退出</a>
+        </div>
+
+        <ul class="ng-list">
+          <li class="ng-item ng-selected" name="ng-p">作品</li>
+          <li class="ng-item" name="ng-r">简历</li>
+          <span class="icon-change">&#xe933;</span>
+        </ul>
+        <div class="ng-body ng-p">
+        <ul class=" produce-list ">
+          <li class="produce-item">
+            <img src="../img/base/3.jpg">
+            <div class="layer">
+              艺术家图
+              <span class="icon-close-icon">&#xe930;</span>
+            </div>
+          </li>
+          <li class="produce-item">
+            <img src="../img/base/3.jpg">
+            <div class="layer b-nochange">
+              艺术家图
+              <span class="icon-close-icon b-nochange">&#xe930;</span>
+            </div>
+          </li>
+          <li class="produce-item">
+            <img src="../img/base/3.jpg">
+            <div class="layer b-nochange">
+              艺术家图
+              <span class="icon-close-icon b-nochange">&#xe930;</span>
+            </div>
+          </li>
+          <li class="produce-item">
+            <img src="../img/base/3.jpg">
+            <div class="layer b-nochange">
+              艺术家图
+              <span class="icon-close-icon b-nochange">&#xe930;</span>
+            </div>
+          </li>
+          <li class="produce-item">
+            <img src="../img/base/3.jpg">
+            <div class="layer b-nochange">
+              艺术家图
+              <span class="icon-close-icon b-nochange">&#xe930;</span>
+            </div>
+          </li>
+          <li class="produce-item">
+            <img src="../img/base/3.jpg">
+            <div class="layer b-nochange">
+              艺术家图
+              <span class="icon-close-icon b-nochange">&#xe930;</span>
+            </div>
+          </li>
+          <div class="add-icon b-nochange">
+            <span class="icon-add-icon b-nochange">&#xe930;</span>
+          </div>
+        </ul>
+      </div>
+      <div class="ng-body resume-content ng-r">
+        <div class="publish-title">
+          <p class="art-name headline1">艺术家姓名</p>
+        </div>
+        <textarea rows="" cols="" class="resume-area" maxlength="10000">
+          
+        </textarea>
+        <p class="resume-tips">艺术经历<span>艺术经历 （选填项，最多可输入50条，每年可输入1000字）</span></p>
+        
+        <ul class="resume-detail-list">
+          <li class="esume-detail-item">
+            <input type="number" class="resume-year">
+            <input type="text" name="" id="" value="" class="resume-detail"/>
+          </li>
+        </ul>
+        <button type="button" class="sure-btn">发布</button>
+      </div>
+      
+      <ul class=" produce-list " id="sortable">
+        <li class="produce-item">
+          <img src="../img/base/3.jpg">
+          <div class="layer b-nochange">
+            艺术家图1
+            <span class="icon-close-icon b-nochange">&#xe930;</span>
+          </div>
+        </li>
+        <li class="produce-item">
+          <img src="../img/base/3.jpg">
+          <div class="layer b-nochange">
+            艺术家图2
+            <span class="icon-close-icon b-nochange">&#xe930;</span>
+          </div>
+        </li>
+        <li class="produce-item">
+          <img src="../img/base/3.jpg">
+          <div class="layer b-nochange">
+            艺术家图3
+            <span class="icon-close-icon b-nochange">&#xe930;</span>
+          </div>
+        </li>
+        <li class="produce-item">
+          <img src="../img/base/3.jpg">
+          <div class="layer b-nochange">
+            艺术家图4
+            <span class="icon-close-icon b-nochange">&#xe930;</span>
+          </div>
+        </li>
+        <li class="produce-item">
+          <img src="../img/base/3.jpg">
+          <div class="layer b-nochange">
+            艺术家图5
+            <span class="icon-close-icon b-nochange">&#xe930;</span>
+          </div>
+        </li>
+        <li class="produce-item">
+          <img src="../img/base/3.jpg">
+          <div class="layer b-nochange">
+            艺术家图6
+            <span class="icon-close-icon b-nochange">&#xe930;</span>
+          </div>
+        </li>
+      </ul>
+      
+      </div>
+    </section>
+    
+      
+
+    <!-- 提交成功样式 -->
+    <div class="alert-success" style="display: none;">
+      <p>您的作品已成功提交！</p>
+      <p>正在审核中，审核时间预计在一个工作日内。</p>
+
+      <span class="icon-alert-close">&#xe930;</span>
+    </div>
+    <div class="icon-close-light icon-icon_light_b"><span class="path1"></span><span class="path2"></span></div>
+    <script src="../js/close_light.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+      $(function(){
+        $('.ng-item').on('click',function(){
+          $(this).addClass('ng-selected').siblings().removeClass('ng-selected');
+          if(is_dark==1){
+            $('.ng-selected').css('color','#fff')
+          }
+          $('.ng-body').css('display','none')
+          $('.'+$(this).attr('name')).css('display','block')
+          if($(this).attr('name')=='ng-p'){
+            $('.icon-change').css('display','inline-block')
+          }else{
+            $('.icon-change').css('display','none')
+          }
+        })
+        
+        $('.icon-change').on('click',function(){
+          if($(this).hasClass('icon-change-selected')){
+            $('#sortable').css('display','none')
+            $(this).removeClass('icon-change-selected')
+            $('.ng-p').css('display','block')
+          }else{
+            $('#sortable').css('display','flex')
+            $(this).addClass('icon-change-selected')
+            $('.ng-p').css('display','none')
+          }
+          
+        })
+      })
+      
+      var movelist=document.getElementById('sortable')
+      var sortable = Sortable.create(movelist);
+      
+    </script>
+  </body>
+</html>

@@ -25,7 +25,7 @@
   font-size: 12px;
 }
 .icon-menu-tip-close:hover{
-  color: #1053FF;
+  color: #000000;
 }
 
 .menu-list {
@@ -54,16 +54,25 @@
   column-count: 4;
 
 }
-
+.nomal-production{
+  display: flex;
+  flex-wrap: wrap;
+}
 .production-item {
   width: 330px;
   margin-bottom: 27px;
   break-inside: avoid;
   position: relative;
   cursor: pointer;
+  
+}
+.nomal-production .production-item{
+  height: 330px;
+  margin-right: 27px;
+  
 }
 .production-item:hover{
-  border: 1px solid #1053FF;
+  border: 3px solid #1053FF;
 }
 .production-hover{
   position: absolute;
@@ -78,8 +87,51 @@
 .masonry-img {
   width: 100%;
   height: auto;
+  vertical-align: bottom;
+}
+.nomal-img{
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.menue1,.menue2{
+  position: relative;
+}
+.menue-selected{
+  color: #000000;
+}
+.types-list ,.types-list2{
+  width: 250px;
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid #A39DA4;
+  display: none;
+  z-index: 99;
+  transform: translate(-50%,0);
 }
 
+.types-itme,.types-itme2{
+  width: 100%;
+  heigh: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size:14px;
+  color: #A39DA4;
+  cursor: pointer;
+}
+
+.types-itme:hover , .types-itme2:hover{
+  border: 1px solid #1053FF;
+  color: #000000;
+}
+
+.types-list-selected {
+  font-weight: bold;
+  border: 2px solid #1053FF;
+  color: #000000;
+}
 @media (min-width: 1000px) and (max-width: 1500px) {
   .water-production {
     column-count: 3;

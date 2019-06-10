@@ -1,9 +1,6 @@
 .home-page {
   position: relative;
-  width: 1920px;
-  width: 1920px;
-  width: 1920px;
-  width: 120rem;
+ width: 100%;
   height: 1080px;
   height: 1080px;
   height: 1080px;
@@ -189,7 +186,7 @@
 
 .production-first-item:hover,
 .production-second-item:hover {
-  border: 4px solid mediumpurple;
+  border: 4px solid #1053FF;
 }
 
 .production-hover,
@@ -207,7 +204,30 @@
 .cargo-hover {
   padding: 52px 0 0 26px;
 }
-
+.cargo-info-name{
+ font-weight: bold;
+ margin-top: 30px;
+}
+.production-price{
+ position: absolute;
+  bottom: 67px;
+  left: 51px;
+  font-size:18px;
+  color: #1053FF;
+}
+.cargo-info-price{
+  position: absolute;
+  bottom: 41px;
+  left: 26px;
+  font-size:18px;
+  color: #1053FF;
+}
+.icon-sell-out{
+  font-size: 36px;
+  position: absolute;
+  top: -2px;
+  right: 15px;
+}
 .middle-swiper-content {
   width: 100%;
   height: 702px;
@@ -257,7 +277,7 @@
 }
 
 .artist-item:hover {
-  border: 4px solid mediumpurple;
+  border: 4px solid #1053FF;
 }
 
 .artist-img {
@@ -365,7 +385,7 @@
 }
 
 .cargo-item:hover {
-  border: 4px solid mediumpurple;
+  border: 4px solid #1053FF;
 }
 
 .cargo-item:last-child {
@@ -397,7 +417,9 @@
   color: rgba(163, 157, 164, 1);
   cursor: pointer;
 }
-
+.router:hover{
+  color: #000000;
+}
 .router img {
   width: 18px;
   height: 32px;
@@ -414,8 +436,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: mediumpurple;
+  background: #1053FF;
   padding: 0 70px;
+  min-width: 1337px;
 }
 
 .footer-logo {
@@ -477,4 +500,9 @@
 
 .footer-a:last-child{
   margin-left: 52px;
+}
+
+.thumbnail-list {
+  width: 95%;
+  overflow: hidden;
 }

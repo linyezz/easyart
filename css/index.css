@@ -76,12 +76,12 @@ body {
   user-select: none;
   cursor: pointer;
 }
-*[class^="icon"]:hover{
+/* *[class^="icon"]:hover{
   color: #1053FF;
 }
 *[class^="icon"]:active{
   color: #0032FF;
-}
+} */
 .p-bold {
   font-weight: bold;
 }
@@ -108,4 +108,12 @@ body {
 
 .p-content3 {
   font-size: 12px;
+}
+.icon-close-light{
+  position: fixed;
+
+  font-size: 24px;
+  z-index: 999;
+  right: 22px;
+  bottom: 27px;
 }

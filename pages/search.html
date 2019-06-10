@@ -5,6 +5,7 @@
     <link rel="stylesheet" type="text/css" href="../css/swiper.min.css" />
     <link rel="stylesheet" type="text/css" href="../css/index.css" />
     <link rel="stylesheet" type="text/css" href="../css/search.css" />
+    <link rel="stylesheet" type="text/css" href="../css/font.css"/>
     <script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="../js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="../js/anime.min.js" type="text/javascript" charset="utf-8"></script>
@@ -20,7 +21,8 @@
       <section class="nav-content nav-production">
         <div class="search-input-item">
           <input type="text" name="" id="" value="" class="search-inpt" />
-          <img src="../img/search/sousuo@2x.png" alt="" class="search-icon">
+          <!-- <img src="../img/search/sousuo@2x.png" alt="" class="search-icon"> -->
+          <span class="icon-icon_research_2_b"></span>
         </div>
 
         <div class="search-detail">
@@ -59,7 +61,8 @@
       <section class="nav-content nav-artist">
         <div class="search-input-item" style="margin-bottom: 0;">
           <input type="text" name="" id="" value="" class="search-inpt" />
-          <img src="../img/search/sousuo@2x.png" alt="" class="search-icon">
+          <!-- <img src="../img/search/sousuo@2x.png" alt="" class="search-icon"> -->
+          <span class="icon-icon_research_2_b"></span>
         </div>
         <div class="search-history">
           <p class="history-tip">搜索记录</p>
@@ -69,17 +72,33 @@
         </div>
       </section>
     </div>
+    <div class="icon-close-light icon-icon_light_b"><span class="path1"></span><span class="path2"></span></div>
+    <script src="../js/close_light.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript">
       $(function() {
         $('.tag-item').on('click', function() {
           $(this).siblings().removeClass('clicked')
           $(this).addClass('clicked');
+          if(is_dark==1){
+            $(this).css('color','#fff')
+             $(this).siblings().css('color','#A39DA4;')
+          }else{
+            
+          }
         })
         $('.classify-item').on('click', function() {
           if ($(this).hasClass('classify-clicked')) {
             $(this).removeClass('classify-clicked');
+            if(is_dark==1){
+              $(this).css('color','rgba(77, 77, 77, 1)')
+              
+            }
           } else {
             $(this).addClass('classify-clicked');
+            if(is_dark==1){
+              $(this).css('color','#fff')
+             
+            }
           }
         })
         $('.size-item').on('click', function() {
@@ -93,11 +112,23 @@
         })
         $('.history-item').on('click', function() {
           $(this).siblings().removeClass('history-clicked')
+          if(is_dark==1){
+             $(this).siblings().css('color','rgba(77, 77, 77, 1)')
+            
+          }
           if ($(this).hasClass('history-clicked')) {
             $(this).removeClass('history-clicked');
+            if(is_dark==1){
+              $(this).css('color','rgba(77, 77, 77, 1)')
+              
+            }
           } else {
           
             $(this).addClass('history-clicked');
+            if(is_dark==1){
+              $(this).css('color','#fff')
+             
+            }
           }
         })
       })

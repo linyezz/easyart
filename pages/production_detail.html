@@ -11,8 +11,8 @@
   </head>
   <body>
     <div class="header">
-      <div class="logo1"><img src="../img/home/logo-2@2x.png"></div>
-      <ul class="icon-list">
+      <div class="logo1"><span class="icon-logo_b_1"></span></div>
+      <ul class="icon-list chang-layers">
         <li class="icon-item">&#xe945;</li>
         <li class="icon-item">&#xe912;</li>
         <li class="icon-item">&#xe90d;</li>
@@ -48,6 +48,7 @@
                   <span>12*12</span>
                 </li>
               </ul>
+              <button type="button" class="buy-btn">购买</button>
               <div class="enshrine">
                 <span class="icon-enshrine">&#xe93c;</span>
                 22人点赞
@@ -143,7 +144,7 @@
           <li class="pd-item">
 
             <img src="../img/demo/633ff41f99e1fb309de51c18cb4e352a.jpg">
-            <div class="artist-layer">
+            <div class="artist-layer chang-layers">
               <p class="pd-name">作品名称</p>
               <p class="pd-intro">czcdcdczdcz</p>
             </div>
@@ -152,7 +153,7 @@
           <li class="pd-item">
 
             <img src="../img/demo/633ff41f99e1fb309de51c18cb4e352a.jpg">
-            <div class="artist-layer">
+            <div class="artist-layer chang-layers">
               <p class="pd-name">作品名称</p>
               <p class="pd-intro">czcdcdczdcz</p>
             </div>
@@ -161,7 +162,7 @@
           <li class="pd-item">
 
             <img src="../img/demo/633ff41f99e1fb309de51c18cb4e352a.jpg">
-            <div class="artist-layer">
+            <div class="artist-layer chang-layers">
               <p class="pd-name">作品名称</p>
               <p class="pd-intro">czcdcdczdcz</p>
             </div>
@@ -170,7 +171,7 @@
           <li class="pd-item">
 
             <img src="../img/demo/633ff41f99e1fb309de51c18cb4e352a.jpg">
-            <div class="artist-layer">
+            <div class="artist-layer chang-layers">
               <p class="pd-name">作品名称</p>
               <p class="pd-intro">czcdcdczdcz</p>
             </div>
@@ -179,7 +180,7 @@
           <li class="pd-item">
 
             <img src="../img/demo/633ff41f99e1fb309de51c18cb4e352a.jpg">
-            <div class="artist-layer">
+            <div class="artist-layer chang-layers">
               <p class="pd-name">作品名称</p>
               <p class="pd-intro">czcdcdczdcz</p>
             </div>
@@ -188,7 +189,7 @@
           <li class="pd-item">
 
             <img src="../img/demo/633ff41f99e1fb309de51c18cb4e352a.jpg">
-            <div class="artist-layer">
+            <div class="artist-layer chang-layers">
               <p class="pd-name">作品名称</p>
               <p class="pd-intro">czcdcdczdcz</p>
             </div>
@@ -198,6 +199,28 @@
 
       </div>
     </div>
+
+    <div class="alert-login">
+      <span class="icon-logo">&#xe906;</span>
+      <p class="alert-tips1">
+        可用微信扫描二维码，<br>
+        关注小程序进入购买。
+      </p>
+      <div class="er-code">
+        <img src="">
+      </div>
+      <p class="alert-tips2">请使用微信扫描二维码登录</p>
+      <span class="icon-close-icon">&#xe930;</span>
+    </div>
+
+    <div class="big-img">
+      <span class="icon-big-last">&#xe93d;</span>
+      <img src="">
+      <span class="icon-big-next">&#xe91b;</span>
+      <span class="icon-close-big">&#xe930;</span>
+    </div>
+    <div class="icon-close-light icon-icon_light_b"><span class="path1"></span><span class="path2"></span></div>
+    <script src="../js/close_light.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript">
       $(function() {
         //全局变量
@@ -205,6 +228,7 @@
         var thumbnailWidth = $('.thumbnail-slick').width()
         var thumbnailSelected = $('.thumbnail-item').eq(0);
         var autoHeight = $('.show-intro').height();
+        var bigItem;
         $('.show-intro').css('height', '50px');
         $('.intro-box').css('height', 'auto')
         //缩略图切换
@@ -262,7 +286,7 @@
             })
           }
         })
-         //显示全部文字
+        //显示全部文字
         $('.icon-show-intro').on('click', function() {
           var status = $(this).attr('name');
           if (status == 'down') {
@@ -282,12 +306,56 @@
             $(this).css('transform', 'rotate(0deg)')
           }
         })
-        $('.pd-item').on('mouseover',function(){
-        	 $(this).find('.artist-layer').css('display', 'block')
+        $('.pd-item').on('mouseover', function() {
+          $(this).find('.artist-layer').css('display', 'block')
         })
         $('.pd-item').on('mouseout', function() {
           $(this).find('.artist-layer').css('display', 'none')
-        }) 
+        })
+
+        $('.buy-btn').on('click', function() {
+          $('.alert-login').css('display', 'flex')
+        })
+        $('.icon-close-icon').on('click', function() {
+          $('.alert-login').css('display', 'none')
+        })
+        //展示大图
+        $('.main-img').on('click', function() {
+          $('.big-img').css('display', 'flex');
+          $('.big-img img').attr('src', thumbnailSelected.find("img").attr("big"));
+          bigItem = thumbnailSelected;
+          
+        })
+        $('.icon-close-big').on('click', function() {
+          $('.big-img').css('display', 'none');
+          $('.big-img img').attr('src', thumbnailSelected.find("img").attr("big"));
+          bigItem = '';
+        })
+        
+        $('.icon-big-next').on('click', function() {
+          var index = bigItem.index();
+          index++;
+
+          if (index > thumbnailNum || index == thumbnailNum) {
+            return;
+          }
+          bigItem = $('.thumbnail-item').eq(index);
+
+          $('.big-img img').attr('src', bigItem.find("img").attr("big"));
+
+
+        })
+
+        $('.icon-big-last').on('click', function() {
+          var index = bigItem.index();
+          index--;
+          
+          if (index < 0) {
+            return;
+          }
+           bigItem = $('.thumbnail-item').eq(index);
+          $('.big-img img').attr('src', bigItem.find("img").attr("big"));
+        })
       })
     </script>
   </body>

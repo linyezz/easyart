@@ -13,7 +13,7 @@
 	</head>
 	<body>
     <div class="header">
-      <div class="logo1"><img src="../img/home/logo-2@2x.png"></div>
+     <div class="logo1"><span class="icon-logo_b_1"></span></div>
       <ul class="icon-list">
         <li class="icon-item">&#xe945;</li>
         <li class="icon-item">&#xe912;</li>
@@ -31,13 +31,27 @@
           <span class="icon-menu-tip-close">&#xe902;</span>
         </div>
         <ul class="menu-list">
-          <li class="icon-menu-item">
-            &#xe92f;
+          <li class=" menue1 ">
+           <span class="icon-menu-item">&#xe92f;</span> 
+            <ul class="types-list chang-layers">
+              <li class="types-itme" value="50"> <50cm </li>
+              <li class="types-itme" value="50_100">50-100cm</li>
+              <li class="types-itme" value="100_150">100-150cm</li>
+              <li class="types-itme" value="150_200">150-200cm</li>
+              <li class="types-itme" value="200">>200cm</li>
+            </ul>
           </li>
-          <li class="icon-menu-item">
-            &#xe908;
+          <li class="menue2">
+            <span class="icon-menu-item">&#xe908;</span>
+            <ul class="types-list2 chang-layers">
+              <li class="types-itme2" value="50"> 全部 </li>
+              <li class="types-itme2" value="50_100">50-100cm</li>
+              <li class="types-itme2" value="100_150">100-150cm</li>
+              <li class="types-itme2" value="150_200">150-200cm</li>
+              <li class="types-itme2" value="200">>200cm</li>
+            </ul>
           </li>
-          <li class="icon-menu-item">
+          <li class="icon-menu-item menue3">
             &#xe92b;
           </li>
         </ul>
@@ -48,35 +62,38 @@
           <div class="production-hover">
             <p class="production-intro"></p>
           </div>
-          <img class="masonry-img" src="../img/demo/05f1f00435f195d6052ab3e3b28afc0b.jpg" >
+          <img class="masonry-img" src="../img/demo/05f1f00435f195d6052ab3e3b28afc0b.jpg" />
         </div>
         <div class="production-item">
-          <img class="masonry-img" src="../img/base/4.jpg" >
+          <img class="masonry-img" src="../img/base/4.jpg" />
         </div>
         <div class="production-item">
-          <img class="masonry-img" src="../img/base/0.jpg" >
+          <img class="masonry-img" src="../img/base/0.jpg" />
         </div>
         <div class="production-item">
-          <img class="masonry-img" src="../img/demo/1e999a33f0ef626aacfdfed913195fb2.jpg" >
+          <img class="masonry-img" src="../img/demo/1e999a33f0ef626aacfdfed913195fb2.jpg" />
         </div>
         <div class="production-item">
-          <img class="masonry-img" src="../img/demo/633ff41f99e1fb309de51c18cb4e352a.jpg" >
+          <img class="masonry-img" src="../img/demo/633ff41f99e1fb309de51c18cb4e352a.jpg" />
         </div>
         <div class="production-item">
-          <img class="masonry-img" src="../img/demo/ad17fdd5773b547506a006891afdeb0a.jpg" >
+          <img class="masonry-img" src="../img/demo/ad17fdd5773b547506a006891afdeb0a.jpg" />
         </div>
         <div class="production-item">
-          <img class="masonry-img" src="../img/demo/7ebb91463b96f48fd2b3031e4af1486d.jpg" >
+          <img class="masonry-img" src="../img/demo/7ebb91463b96f48fd2b3031e4af1486d.jpg" />
         </div>
         <div  class="production-item">
-          <img class="masonry-img" src="../img/base/4.jpg" >
+          <img class="masonry-img" src="../img/base/4.jpg" />
         </div>
         <div  class="production-item">
-          <img class="masonry-img" src="../img/demo/ad17fdd5773b547506a006891afdeb0a.jpg" >
+          <img class="masonry-img" src="../img/demo/ad17fdd5773b547506a006891afdeb0a.jpg" />
         </div>
       </div>
     </div>
+    <div class="icon-close-light icon-icon_light_b"><span class="path1"></span><span class="path2"></span></div>
+    <script src="../js/close_light.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript">
+      var water=1;//1:瀑布流,2:普通
       $(function(){
         $('.production-item').on('mouseover', function() {
           $(this).find('.production-hover').css('display', 'block')
@@ -84,6 +101,48 @@
         $('.production-item').on('mouseout', function() {
           $(this).find('.production-hover').css('display', 'none')
         }) 
+        $('.menue1').on('click',function(){
+          if($(this).find('.icon-menu-item').hasClass('menue-selected')){
+            $('.types-list').css('display','none')
+            $(this).find('.icon-menu-item').removeClass('menue-selected')
+          }else{
+            $('.types-list').css('display','block')
+            $(this).find('.icon-menu-item').addClass('menue-selected')
+          }
+        })
+        $('.menue2').on('click',function(){
+          if($(this).find('.icon-menu-item').hasClass('menue-selected')){
+            $('.types-list2').css('display','none')
+            $(this).find('.icon-menu-item').removeClass('menue-selected')
+          }else{
+            $('.types-list2').css('display','block')
+            $(this).find('.icon-menu-item').addClass('menue-selected')
+          }
+        })
+        $('.types-itme').on('click', function(e) {
+          e.stopPropagation();
+          $(this).addClass('types-list-selected').siblings().removeClass('types-list-selected');
+          
+        })
+        $('.types-itme2').on('click', function(e) {
+          e.stopPropagation();
+          $(this).addClass('types-list-selected').siblings().removeClass('types-list-selected');
+          
+        })
+        $('.menue3').on('click',function(){
+          if(water==1){
+            water=2;
+            $('.production').removeClass('water-production');
+            $('.production').addClass('nomal-production')
+            $('.masonry-img').addClass('nomal-img')
+          }else{
+             water=1;
+            $('.production').addClass('water-production');
+            $('.production').removeClass('nomal-production')
+            $('.masonry-img').removeClass('nomal-img')
+          }
+          
+        })
       })
     </script>
 	</body>

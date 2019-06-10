@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/index.css" />
+    <link rel="stylesheet" type="text/css" href="../css/font.css" />
+    <link rel="stylesheet" type="text/css" href="../css/header.css" />
+    <link rel="stylesheet" type="text/css" href="../css/publish.css" />
+    <script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/anime.min.js" type="text/javascript" charset="utf-8"></script>
+    <title>作品发布</title>
+  </head>
+  <body>
+    <div class="produce-publish">
+      <span class="icon-alert-close">&#xe930;</span>
+      <div class="publish-content">
+        <p class="publish-title">作品发布</p>
+        <div class="p-content">
+          <div class="pu-left">
+            <p class="pu-tip">最多上传8张图片，每张大小不超过2M，格式仅限 JPG / PNG / GIF</p>
+            <ul class="left-list">
+              <li class="pu-item">
+                <img src="../img/base/1.jpg">
+                <div class="pu-item-layer b-nochange">
+                  作品名称
+                </div>
+                <span class="pu-item-close icon-icon_x"><span class="path1"></span><span class="path2"></span></span>
+              </li>
+              <li class="pu-item">
+                <img src="../img/base/1.jpg">
+                <div class="pu-item-layer b-nochange">
+                  作品名称
+                </div>
+                <span class="pu-item-close icon-icon_x"><span class="path1"></span><span class="path2"></span></span>
+              </li>
+              <li class="pu-item">
+                <img src="../img/base/1.jpg">
+                <div class="pu-item-layer b-nochange">
+                  作品名称
+                </div>
+                <span class="pu-item-close icon-icon_x"><span class="path1"></span><span class="path2"></span></span>
+              </li>
+              <li class="pu-item">
+                <img src="../img/base/1.jpg">
+                <div class="pu-item-layer b-nochange">
+                  作品名称
+                </div>
+                <span class="pu-item-close icon-icon_x"><span class="path1"></span><span class="path2"></span></span>
+              </li>
+              <li class="pu-item">
+                <img src="../img/base/1.jpg">
+                <div class="pu-item-layer b-nochange">
+                  作品名称
+                </div>
+                <span class="pu-item-close icon-icon_x"><span class="path1"></span><span class="path2"></span></span>
+              </li>
+              <li class="pu-item">
+                <img src="../img/base/1.jpg">
+                <div class="pu-item-layer b-nochange">
+                  作品名称
+                </div>
+                <span class="pu-item-close icon-icon_x"><span class="path1"></span><span class="path2"></span></span>
+              </li>
+
+              <div class="add-icon pu-add-btn">
+                <span class="icon-add-icon pu-add-icon">&#xe930;</span>
+              </div>
+            </ul>
+          </div>
+          <div class="pu-right">
+            <div class="form-item">
+              <label class="input-title">作品名称（必填）</label>
+              <div class="inpu-item">
+                <input id="p-name" class="pu-input" type="text" name="name" placeholder="输入名称" maxlength="20" />
+                <p class="max-word"><span>0</span>/20</p>
+              </div>
+            </div>
+            <div class="form-item">
+              <label class="input-title">作品类别（必填）</label>
+              <div class="inpu-item">
+                <input id="types" class="pu-input" type="text" name="cate" placeholder="选择类别" />
+                <ul class="types-list">
+                  <li class="types-itme" value="水彩">水彩</li>
+                  <li class="types-itme" value="水彩">水彩</li>
+                  <li class="types-itme" value="水彩">水彩</li>
+                  <li class="types-itme" value="水彩">水彩</li>
+                  <li class="types-itme" value="水彩">水彩</li>
+                  <li class="types-itme" value="水彩">水彩</li>
+                  <li class="types-itme" value="水彩">水彩</li>
+                  <li class="types-itme" value="水彩">水彩</li>
+                  <li class="types-itme" value="水彩">水彩</li>
+                  <li class="types-itme" value="水彩">水彩</li>
+
+                </ul>
+                <span class="icon-types-down">&#xe927;</span>
+              </div>
+            </div>
+          
+          <div class="form-item">
+            <label class="input-title">印 数</label>
+            <div class="inpu-item">
+              <input type="number" class="photo-input" name="" id="" value="" />
+              <span>/</span>
+              <input type="number" class="photo-input" name="" id="" value="" />
+            </div>
+          </div>
+          
+          <div class="form-item">
+            <label class="input-title">作品尺寸（必填）</label>
+            <div class="inpu-item">
+              <input type="number" class="photo-input" name="pr_size" id="" value="" placeholder="长"/>&nbsp;
+              x&nbsp
+              <input type="number" class="photo-input" name="pr_size" id="" value="" placeholder="宽"/>&nbsp;
+              x&nbsp
+              <input type="number" class="photo-input" name="pr_size" id="" value="" placeholder="高"/>&nbsp
+              cm
+            </div>
+          </div>
+          
+          <div class="form-item">
+            <label class="input-title">作品价格（必填）</label>
+            <div class="inpu-item">
+             <input class="price-input" type="number" name="" id="" value="" />&nbsp&nbsp&nbsp
+             rmb
+            </div>
+          </div>
+          
+          <div class="form-item">
+            <label class="input-title">创作年份</label>
+            <div class="inpu-item">
+              <input id="pr-year" class="pu-input" type="text" name="year" placeholder="" />
+            </div>
+          </div>
+          
+          <div class="form-item">
+            <label class="input-title">作品材质</label>
+            <div class="inpu-item">
+              <input id="pr-texture" class="pu-input" type="text" name="texture" placeholder="" maxlength="20"/>
+              <p class="max-word"><span>0</span>/20</p>
+            </div>
+          </div>
+          
+          <div class="form-item">
+            <label class="input-title">创作手记</label>
+            <div class="inpu-item">
+              <input id="pr-record" class="pu-input" type="text" name="record" placeholder="" maxlength="100"/>
+              <p class="max-word"><span>0</span>/100</p>
+            </div>
+          </div>
+          
+          <div class="p-tag-list">
+            <label class="input-title">创作手记</label>
+            <div class="p-tag-item">原作</div>
+            <div class="p-tag-item">数字版权</div>
+          </div>
+          
+          <div class="p-tag-list">
+            <label class="input-title">装裱状态</label>
+            <div class="p-border-item">有 框</div>
+            <div class="p-border-item">无 框</div>
+          </div>
+          
+          <button type="button" class="sure-btn">发布</button>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+    <div class="warning headline1 b-nochange">这里显示为报错内容 文字：标题 3, 白色，显示条背景颜色_
+    <span class="icon-warning-close b-nochange">&#xe930;</span>
+    </div>
+    
+    <div class="icon-close-light icon-icon_light_b"><span class="path1"></span><span class="path2"></span></div>
+    <script src="../js/close_light.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+      $(function() {
+        var name = '' //作品名称
+        var types = '' //作品类型
+        $('#types').on('focus', function() {
+          $('.types-list').css('display', 'block');
+          $('.icon-types-down').css('transform', 'rotate(180deg)')
+        })
+        $('#types').on('blur', function() {
+          setTimeout(function() {
+            $('.types-list').css('display', 'none');
+            $('.icon-types-down').css('transform', 'rotate(0deg)')
+          }, 200)
+
+        })
+        //字数
+        $('.types-itme').on('click', function() {
+          // $('#types').focus()
+          $('#types').attr('value', $(this).attr('value'));
+          $(this).addClass('types-list-selected').siblings().removeClass('types-list-selected');
+          types = $(this).attr('value');
+        })
+        $('#p-name').on('input', function() {
+          var length = $(this).val().length;
+          $(this).parent('.inpu-item').find('.max-word span').text(length);
+        })
+        $('#pr-texture').on('input', function() {
+          var length = $(this).val().length;
+          $(this).parent('.inpu-item').find('.max-word span').text(length);
+        })
+        $('#pr-record').on('input', function() {
+          var length = $(this).val().length;
+          $(this).parent('.inpu-item').find('.max-word span').text(length);
+        })
+        $('.p-tag-item').on('click',function(){
+          console.log('sghd')
+          if($(this).hasClass('p-tag-item-selected')){
+            $(this).removeClass('p-tag-item-selected')
+          }else{
+            $(this).addClass('p-tag-item-selected')
+          }
+        })
+        $('.p-border-item').on('click',function(){
+          $(this).addClass('p-border-item-selected').siblings().removeClass('p-border-item-selected');
+        })
+        
+        $('.icon-warning-close').on('click',function(){
+          $('.warning').slideUp(500);
+        })
+      })
+    </script>
+  </body>
+</html>

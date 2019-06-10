@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/index.css" />
+    <link rel="stylesheet" type="text/css" href="../css/font.css" />
+    <link rel="stylesheet" type="text/css" href="../css/header.css" />
+    <link rel="stylesheet" type="text/css" href="../css/login.css" />
+    <script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<title></title>
+	</head>
+	<body>
+    <div class="login chang-layers">
+     <div class="logo1"><span class="icon-logo_b_1"></span></div>
+      <p class="login-tips1">此发布作品功能仅对已入驻艺术家开放</p>
+      <p class="login-tips2">手机登录</p>
+      <input type="text" name="admin" class="admin" placeholder="请输入手机号码"/>
+      <div class="passwad-item">
+        <input type="password" name="passwad" class="passwad" placeholder="请输入验证码"/>
+        <button type="button" id="code" class="code">获取验证码</button>
+      </div>
+      <p class="code-again">验证码为必填项</p>
+      <button type="button" class="login-btn">登录</button>
+      <p class="login-tips3">登录即同意<span>用户协议</span>和<span>隐私政策</span></p>
+      
+      <span class="icon-close-icon">&#xe930;</span>
+    </div>
+    <div class="icon-close-light icon-icon_light_b"><span class="path1"></span><span class="path2"></span></div>
+    <script src="../js/close_light.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+      $(function(){
+        var admin,code;
+        var is_code=true;
+        var time=60;
+        $('.code').on('click',function(){
+          if(is_code){
+            countDown()
+          }
+        })
+        
+        $('.login-btn').on('click',function(){
+          code=$('.passwad').val();
+          admin=$('.admin').val();
+          if(code==''){
+            $('.code-again').css('display','block')
+          }
+        })
+        //倒计时
+        function countDown(){
+          is_code=false;
+          $('.code').text(time+'s');
+          var setTime=setInterval(function(){
+            $('.code').text(time+'s');
+            time--;
+            if(time<0){
+              clearInterval(setTime)
+              is_code=true;
+              $('.code').text('获取验证码');
+            }
+          },1000)
+        }
+      })
+    </script>
+	</body>
+</html>
