@@ -23,15 +23,19 @@
 	font-size: 16px;
 	font-weight: bold;
 	color: rgba(0, 0, 0, 1);
+	height: 16px;
 }
 
 .letter-item {
 	cursor: pointer;
 	margin-left: 20px;
 }
-
-.letter-item:active {
+.letter-item:hover{
 	color: #1053FF;
+	font-size: 24px;
+}
+.letter-item:active {
+	color: #0032FF;
 	font-size: 24px;
 }
 
@@ -104,6 +108,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	margin-top: 50px;
+	display: none;
 }
 
 .artist-name-item {
@@ -112,7 +117,6 @@
 	flex-shrink: 0;
 	font-size: 16px;
 	font-weight: 300;
-	color: rgba(0, 0, 0, 1);
 	line-height:45px;
 	flex-shrink: 0;
 }

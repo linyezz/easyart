@@ -135,11 +135,13 @@
             $('.production').removeClass('water-production');
             $('.production').addClass('nomal-production')
             $('.masonry-img').addClass('nomal-img')
+						$(this).html('&#xe918;')
           }else{
              water=1;
             $('.production').addClass('water-production');
             $('.production').removeClass('nomal-production')
             $('.masonry-img').removeClass('nomal-img')
+						$(this).html('&#xe916;')
           }
           
         })

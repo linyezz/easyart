@@ -34,7 +34,7 @@
 }
 
 .icon-menu-item {
-  margin-right: 60px;
+  margin-left: 60px;
   cursor: pointer;
   color: #a39da4;
   font-size: 28px;
@@ -51,12 +51,13 @@
 
 .water-production {
   column-gap: 27px;
-  column-count: 4;
+  column-count: 5;
 
 }
 .nomal-production{
   display: flex;
   flex-wrap: wrap;
+	width: 103%;
 }
 .production-item {
   width: 330px;
@@ -132,14 +133,20 @@
   border: 2px solid #1053FF;
   color: #000000;
 }
-@media (min-width: 1000px) and (max-width: 1500px) {
+@media (min-width: 1500px) and (max-width: 1800px) {
+  .water-production {
+    column-count: 4;
+  }
+
+}
+@media (min-width: 1100px) and (max-width: 1500px) {
   .water-production {
     column-count: 3;
   }
 
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 1100px) {
   .water-production {
     column-count: 2;
   }

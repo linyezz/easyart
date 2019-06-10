@@ -60,6 +60,9 @@
   font-size: 28px;
   user-select:none;
 }
+.icon-item:last-child{
+	font-size: 22px;
+}
 .b-icon-item{
   margin-left: 60px;
   margin-left: 3.75rem;
@@ -67,6 +70,9 @@
   font-size: 28px;
   color: #FFFFFF;
   user-select:none;
+}
+.b-icon-item:last-child{
+	font-size: 22px;
 }
 .icon-item:hover{
   color: #1053FF;
@@ -105,4 +111,7 @@
 .icon-img6 {
   width: 25px;
   height: 14px;
+}
+.icon-selected{
+	color: #1053FF;
 }

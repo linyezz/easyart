@@ -56,7 +56,7 @@
 						<li class="letter-item">Z</li>
 						<li class="letter-title">#</li>
 					</ul>
-					<div class="icon-menu"><a href="">&#xe90e;</a></div>
+					<div class="icon-menu"><a onclick="">&#xe90e;</a></div>
 				</div>
 				<ul class="artist-list">
 					<li class="artist-item">
@@ -102,18 +102,56 @@
 						<p class="artist-name">艺术家名称</p>
 					</li>
 				</ul>
+				<ul class="artist-name-list">
+					<li class="artist-name-item">Alain Jullien 阿兰·朱利安
+					<li class="artist-name-item">白光华</li>
+					<li class="artist-name-item">陈晓伟</li>
+					<li class="artist-name-item">储 楚</li>
+					<li class="artist-name-item">陈 农</li>
+					<li class="artist-name-item">蔡鸿硕</li>
+					<li class="artist-name-item">邸晋军</li>
+					<li class="artist-name-item">Daniele Dainelli</li>
+					<li class="artist-name-item">Elspeth Diederix</li>
+					<li class="artist-name-item">冯方宇</li>
+					<li class="artist-name-item">郭 棚</li>
+					<li class="artist-name-item">顾 铮</li>
+					<li class="artist-name-item">韩 磊</li>
+					<li class="artist-name-item">黄 京</li>
+					<li class="artist-name-item">杭鸣峙</li>
+					<li class="artist-name-item">矫 健</li>
+					<li class="artist-name-item">姜一鸣</li>
+					<li class="artist-name-item">矫 健</li>
+					<li class="artist-name-item">顾 铮</li>
+					<li class="artist-name-item">加号 (李嘉豪)</li>
+				</ul>
 			</div>
 		</div>
     <div class="icon-close-light icon-icon_light_b"><span class="path1"></span><span class="path2"></span></div>
     <script src="../js/close_light.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			$(function(){
+				var listType=1;//列表样式 1 图片 2姓名列表
 				$('.artist-pic').on('mouseover',function(){
 					 $(this).find('.artist-layer').css('display', 'block')
 				})
 				$('.artist-pic').on('mouseout', function() {
 				  $(this).find('.artist-layer').css('display', 'none')
 				}) 
+				
+				$('.icon-menu a').on('click',function(){
+					if(listType==1){
+						listType=2;
+						$(this).html('&#xe916;');
+						$('.artist-list').css('display','none');
+						$('.artist-name-list').css('display','flex');
+					}
+					else if(listType==2){
+						listType=1;
+						$(this).html('&#xe90e;');
+						$('.artist-list').css('display','flex');
+						$('.artist-name-list').css('display','none');
+					}	
+				})
 			})
 		</script>
 	</body>
