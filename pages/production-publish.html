@@ -110,11 +110,11 @@
           <div class="form-item">
             <label class="input-title">作品尺寸（必填）</label>
             <div class="inpu-item">
-              <input type="number" class="photo-input" name="pr_size" id="" value="" placeholder="长"/>&nbsp;
+              <input type="number" class="photo-input" name="pr_size" id="p_length" value="" placeholder="长"/>&nbsp;
               x&nbsp
-              <input type="number" class="photo-input" name="pr_size" id="" value="" placeholder="宽"/>&nbsp;
+              <input type="number" class="photo-input" name="pr_size" id="p_width" value="" placeholder="宽"/>&nbsp;
               x&nbsp
-              <input type="number" class="photo-input" name="pr_size" id="" value="" placeholder="高"/>&nbsp
+              <input type="number" class="photo-input" name="pr_size" id="p_height" value="" placeholder="高"/>&nbsp
               cm
             </div>
           </div>
@@ -122,7 +122,7 @@
           <div class="form-item">
             <label class="input-title">作品价格（必填）</label>
             <div class="inpu-item">
-             <input class="price-input" type="number" name="" id="" value="" />&nbsp&nbsp&nbsp
+             <input class="price-input" type="number" name="" id="p_price" value="" />&nbsp&nbsp&nbsp
              rmb
             </div>
           </div>
@@ -174,7 +174,7 @@
     <span class="icon-warning-close b-nochange">&#xe930;</span>
     </div>
     
-    <div class="icon-close-light icon-icon_light_b"><span class="path1"></span><span class="path2"></span></div>
+    <div class="icon-close-light icon-icon_light_on"><span class="path1"></span><span class="path2"></span></div>
     <script src="../js/close_light.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript">
       $(function() {
@@ -224,6 +224,45 @@
         
         $('.icon-warning-close').on('click',function(){
           $('.warning').slideUp(500);
+        })
+        
+        $('.sure-btn').on('click',function(){
+          var p_name=$('#p-name').val();
+          var p_type=$('#types').val();
+          var p_price=$('#p_price').val();
+          var p_length=$('#p_length').val();
+          var p_width=$('#p_width').val();
+          var p_height=$('#p_height').val();
+          if(p_name==''){
+            $('#p-name').addClass('red-bottom')
+          }else{
+            $('#p-name').removeClass('red-bottom')
+          }
+          if(p_type==''){
+            $('#types').addClass('red-bottom')
+          }else{
+            $('#types').removeClass('red-bottom')
+          }
+          if(p_price==''){
+            $('#p_price').addClass('red-bottom')
+          }else{
+            $('#p_price').removeClass('red-bottom')
+          }
+          if(p_length==''){
+            $('#p_length').addClass('red-bottom')
+          }else{
+            $('#p_length').removeClass('red-bottom')
+          }
+          if(p_width==''){
+            $('#p_width').addClass('red-bottom')
+          }else{
+            $('#p_width').removeClass('red-bottom')
+          }
+          if(p_height==''){
+            $('#p_height').addClass('red-bottom')
+          }else{
+            $('#p_height').removeClass('red-bottom')
+          }
         })
       })
     </script>

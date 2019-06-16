@@ -42,3 +42,14 @@
   flex-grow: 1;
   
 }
+.icon-close-icon{
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  color: #A39DA4;
+  cursor: pointer;
+}
+.icon-close-icon:hover{
+  color: #1053FF;
+}

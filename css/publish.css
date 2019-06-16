@@ -74,7 +74,7 @@
 }
 
 .produce-list {
-  width: 120%;
+  width: 106%;
   display: flex;
   flex-wrap: wrap;
   margin-top: 34px;
@@ -529,4 +529,7 @@ border: 1px solid #A39DA4;
 }
 .icon-change-selected{
   color: #000000;
+}
+.red-bottom{
+  border-bottom: 1px solid #FF1053;
 }

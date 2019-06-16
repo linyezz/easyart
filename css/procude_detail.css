@@ -320,6 +320,7 @@
   padding: 110px 0 0 0;
   border: 2px solid #1053FF;
   display: none;
+  z-index: 13;
 }
 
 .alert-tips1 {
@@ -392,4 +393,14 @@
 }
 .icon-big-next{
   right: 46px;
+}
+.log-layer{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(255,255,255,0.7);
+  z-index: 10;
+  display: none;
 }

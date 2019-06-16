@@ -418,7 +418,7 @@
   cursor: pointer;
 }
 .router:hover{
-  color: #000000;
+  color: #1053FF;
 }
 .router img {
   width: 18px;
@@ -505,4 +505,8 @@
 .thumbnail-list {
   width: 95%;
   overflow: hidden;
+  
+}
+.draw-cargo-list,.photo-cargo-list,.sculpture-cargo-list{
+  overflow: visible;
 }

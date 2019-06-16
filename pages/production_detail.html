@@ -10,17 +10,53 @@
     <title>作品详情</title>
   </head>
   <body>
-    <div class="header">
-      <div class="logo1"><span class="icon-logo_b_1"></span></div>
-      <ul class="icon-list chang-layers">
-        <li class="icon-item">&#xe945;</li>
-        <li class="icon-item">&#xe912;</li>
-        <li class="icon-item">&#xe90d;</li>
-        <li class="icon-item">&#xe904;</li>
-        <li class="icon-item">&#xe934;</li>
-        <li class="icon-item">&#xe938;</li>
-      </ul>
-    </div>
+    <div class="main-body">
+     <div class="header">
+       <div class="logo1"><span class="icon-logo_b_1"></span></div>
+       <ul class="icon-list">
+         <li class="icon-item">
+           <span>&#xe945;</span>
+           <div class="h-hover">
+             <p>作品</p>
+             <p>works</p>
+           </div>
+         </li>
+         <li class="icon-item ">
+           <span>&#xe912;</span>
+           <div class="h-hover">
+             <p>艺术家</p>
+             <p>artits</p>
+           </div>
+         </li>
+         <li class="icon-item icon-selected">
+           <span>&#xe95f;</span>
+           <div class="h-hover">
+             <p>艺术机构</p>
+             <p>institute</p>
+           </div>
+         </li>
+         <li class="icon-item">
+           <span>&#xe90d;</span>
+           <div class="h-hover">
+             <p>活动</p>
+             <p>events</p>
+           </div>
+         </li>
+         <li class="icon-item">
+           <span>&#xe904;</span>
+           <div class="h-hover">
+             <p>发布</p>
+             <p>upload</p>
+           </div>
+         </li>
+         <li class="icon-item header-search">&#xe934;</li>
+         <li class="icon-item head-langa " value="chinese">&#xe95d;</li>
+       </ul>
+     </div>
+   
+
+  
+   
     <div class="page">
       <div class="content">
         <section class="production-show">
@@ -219,7 +255,26 @@
       <span class="icon-big-next">&#xe91b;</span>
       <span class="icon-close-big">&#xe930;</span>
     </div>
-    <div class="icon-close-light icon-icon_light_b"><span class="path1"></span><span class="path2"></span></div>
+    <div class="log-layer"></div>
+     </div>
+     
+     <footer class="footer">
+        <img src="../img/home/logo@2x.png" class="footer-logo">
+        <p class="footer-tip b-nochange">Copyright © 2019. All rights reserved</p>
+        <div class="footer-input-item">
+          <input type="email" name="" id="" value="" class="footer-input b-nochange" placeholder="订阅我们"/>
+          <div class="footer-input-button"> <img src="../img/home/gou@2x.png" ></div>
+         
+        </div>
+        
+        <ul class="footer-a-list">
+          <a href="#" class="footer-a b-nochange">入住须知</a>
+          <a href="#" class="footer-a b-nochange">关于我们</a>
+          <a href="#" class="footer-a b-nochange">小程序</a>
+        </ul>
+      </footer>
+     <div class="icon-close-light icon-icon_light_on"><span class="path1"></span><span class="path2"></span></div>
+     
     <script src="../js/close_light.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript">
       $(function() {
@@ -315,9 +370,11 @@
 
         $('.buy-btn').on('click', function() {
           $('.alert-login').css('display', 'flex')
+          $('.log-layer').css('display', 'flex')
         })
         $('.icon-close-icon').on('click', function() {
           $('.alert-login').css('display', 'none')
+          $('.log-layer').css('display', 'none')
         })
         //展示大图
         $('.main-img').on('click', function() {

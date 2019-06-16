@@ -14,17 +14,48 @@
   </head>
   <body>
     <section class="home-page">
-      <div class="home-head">
-        <div class="logo1"><span class="icon-logo_w_login b-nochange"></span></div>
-        <ul class="icon-list">
-          <li class="b-icon-item b-nochange">&#xe945;</li>
-         <li class="b-icon-item b-nochange" >&#xe912;</li>
-         <li class="b-icon-item b-nochange" >&#xe90d;</li>
-         <li class="b-icon-item b-nochange" >&#xe904;</li>
-         <li class="b-icon-item b-nochange" >&#xe934;</li>
-         <li class="b-icon-item b-nochange" >&#xe938;</li>
-        </ul>
-      </div>
+     <div class="home-head">
+       <div class="logo1"><span class="icon-logo_w_login b-nochange"></span></div>
+       <ul class="icon-list">
+         <li class="b-icon-item b-nochange">
+           <span class="b-nochange">&#xe945;</span>
+           <div class="h-hover b-nochange">
+             <p class="b-nochange">作品</p>
+             <p class="b-nochange">works</p>
+           </div>
+         </li>
+         <li class="b-icon-item b-nochange icon-selected">
+           <span class="b-nochange">&#xe912;</span>
+           <div class="h-hover b-nochange">
+             <p class="b-nochange">艺术家</p>
+             <p class="b-nochange">artits</p>
+           </div>
+         </li>
+         <li class="b-icon-item b-nochange">
+           <span class="b-nochange">&#xe95f;</span>
+           <div class="h-hover b-nochange">
+             <p class="b-nochange">艺术机构</p>
+             <p class="b-nochange">institute</p>
+           </div>
+         </li> 
+         <li class="b-icon-item b-nochange">
+           <span class="b-nochange">&#xe90d;</span>
+           <div class="h-hover b-nochange">
+             <p class="b-nochange">活动</p>
+             <p class="b-nochange">events</p>
+           </div>
+         </li>
+         <li class="b-icon-item b-nochange">
+          <span class="b-nochange">&#xe904;</span> 
+          <div class="h-hover b-nochange">
+            <p class="b-nochange">发布</p>
+            <p class="b-nochange">upload</p>
+          </div>
+          </li>
+         <li class="b-icon-item b-nochange header-search">&#xe934;</li>
+         <li class="b-icon-item b-nochange head-langa " value="chinese">&#xe95d;</li>
+       </ul>
+     </div>
       <div class="layer"></div>
       <img src="../img/home/jt@2x.png" class="jt">
       <div class="swiper-container">
@@ -39,17 +70,48 @@
       </div>
     </section>
     <section class="content">
-      <div class="header">
-        <div class="logo1"><span class="icon-logo_b_1"></span></div>
-        <ul class="icon-list">
-          <li class="icon-item">&#xe945;</li>
-          <li class="icon-item">&#xe912;</li>
-          <li class="icon-item">&#xe90d;</li>
-          <li class="icon-item">&#xe904;</li>
-          <li class="icon-item">&#xe934;</li>
-          <li class="icon-item">&#xe938;</li>
-        </ul>
-      </div>
+     <div class="header">
+       <div class="logo1"><span class="icon-logo_b_1"></span></div>
+       <ul class="icon-list">
+         <li class="icon-item">
+           <span>&#xe945;</span>
+           <div class="h-hover">
+             <p>作品</p>
+             <p>works</p>
+           </div>
+         </li>
+         <li class="icon-item ">
+           <span>&#xe912;</span>
+           <div class="h-hover">
+             <p>艺术家</p>
+             <p>artits</p>
+           </div>
+         </li>
+         <li class="icon-item icon-selected">
+           <span>&#xe95f;</span>
+           <div class="h-hover">
+             <p>艺术机构</p>
+             <p>institute</p>
+           </div>
+         </li>
+         <li class="icon-item">
+           <span>&#xe90d;</span>
+           <div class="h-hover">
+             <p>活动</p>
+             <p>events</p>
+           </div>
+         </li>
+         <li class="icon-item">
+           <span>&#xe904;</span>
+           <div class="h-hover">
+             <p>发布</p>
+             <p>upload</p>
+           </div>
+         </li>
+         <li class="icon-item header-search">&#xe934;</li>
+         <li class="icon-item head-langa " value="chinese">&#xe95d;</li>
+       </ul>
+       </div>
 
       <div class="middle-content">
         <ul class="production-first">
@@ -146,10 +208,10 @@
       <div class="cargo-content">
         <p class="cargo-tag">绘画</p>
         <div class="cargo-list draw-list">
-          <i class="last-icon draw-next"></i>
+          <i class="last-icon draw-last"></i>
           
          <div class="thumbnail-list">
-          <ul class="cargo-item-list">
+          <ul class="cargo-item-list draw-cargo-list"> 
             <li class="cargo-item draw-cargo">
               <div class="cargo-hover">
                 <p class="cargo-info-title headline2]">作品名称</p>
@@ -202,8 +264,9 @@
         </div>
          <p class="cargo-tag">摄影</p>
         <div class="cargo-list photo-list">
-          <i class="last-icon photo-next"></i>
-          <ul class="cargo-item-list">
+          <i class="last-icon photo-last"></i>
+          <div class="thumbnail-list">
+          <ul class="cargo-item-list photo-cargo-list">
             <li class="cargo-item photo-cargo">
               <div class="cargo-hover chang-layers">
                 <p class="cargo-info">作品名称</p>
@@ -243,13 +306,15 @@
                 <p class="cargo-info">作品名称</p>
               </div><img src="../img/home/5.jpg" /></li>
           </ul>
+          </div>
           <i class="next-icon photo-next"></i>
 
         </div>
         <p class="cargo-tag">雕塑</p>
         <div class="cargo-list sculpture-list">
-          <i class="last-icon sculpture-next"></i>
-          <ul class="cargo-item-list">
+          <i class="last-icon sculpture-last"></i>
+          <div class="thumbnail-list">
+          <ul class="cargo-item-list sculpture-cargo-list">
             <div class="cargo-hover">
               <div class="cargo-hover chang-layers">
                 <p class="cargo-info">作品名称</p>
@@ -292,12 +357,13 @@
                 <p class="cargo-info">作品名称</p>
               </div><img src="../img/home/5.jpg" /></li>
           </ul>
+          </div>
           <i class="next-icon sculpture-next"></i>
 
         </div>
         <div class="router">
           <p >进入作品页面</p>
-          <img src="../img/home/jt-l@2x.png" >
+         <span class="icon-goto-p">&#xe926;</span>
         </div>
       </div>
     </section>
@@ -317,7 +383,7 @@
         <a href="#" class="footer-a b-nochange">小程序</a>
       </ul>
     </footer>
-    <div class="icon-close-light icon-icon_light_b"><span class="path1"></span><span class="path2"></span></div>
+    <div class="icon-close-light icon-icon_light_on"><span class="path1"></span><span class="path2"></span></div>
     <script src="../js/close_light.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript">
       $(document).ready(function() {
@@ -326,8 +392,14 @@
         var homePage = $('.home-page');
         // homePage.css('width', offsetWidth + 'px')
         homePage.css('height', offsetHeight + 'px')
-        var swiperWidth=$('.cargo-item-list').width();
-        console.log(swiperWidth)
+        var swiperBoxwWidth=$('.thumbnail-list').width()
+        var swiperWidth1=$('.draw-cargo').length;
+        var swiperWidth2=$('.photo-cargo').width();
+        var swiperWidth3=$('.sculpture-cargo').width();
+        var drawWidth=0;
+        var photoWidth=0;
+        var sculptureWidth=0;
+        console.log(swiperWidth1)
         var mySwiper = new Swiper('.swiper-container', {
           initialSlide: 0,
           autoplay: {
@@ -362,7 +434,96 @@
         $('.cargo-item').on('mouseout', function() {
           $(this).find('.cargo-hover').css('display', 'none')
         })
-        
+        $('.draw-next').on('click',function(){
+          drawWidth++;
+          if(drawWidth<swiperWidth1-3){
+            $('.draw-cargo-list').css({
+              'transform':'translate(-'+drawWidth*270+'px,0)',
+              'transition': 'transform 0.5s'
+            })
+           
+          }else{
+            drawWidth=swiperWidth1-3;
+            return;
+          }
+          
+        }) 
+        $('.photo-next').on('click',function(){
+          photoWidth++;
+          if(photoWidth<swiperWidth2-3){
+            $('.photo-cargo-list').css({
+              'transform':'translate(-'+photoWidth*270+'px,0)',
+              'transition': 'transform 0.5s'
+            })
+           
+          }else{
+            photoWidth=swiperWidth2-3;
+            return;
+          }
+          
+        }) 
+        $('.sculpture-next').on('click',function(){
+          sculptureWidth++;
+          if(sculptureWidth<swiperWidth3-3){
+            $('.sculpture-cargo-list').css({
+              'transform':'translate(-'+sculptureWidth*270+'px,0)',
+              'transition': 'transform 0.5s'
+            })
+           
+          }else{
+            sculptureWidth=swiperWidth3-3;
+            return;
+          }
+          
+        }) 
+        $('.draw-last').on('click',function(){
+          drawWidth--;
+          if(drawWidth<0){
+            drawWidth=0
+            return
+            
+            
+          }else{
+            $('.draw-cargo-list').css({
+              'transform':'translate(-'+drawWidth*270+'px,0)',
+              'transition': 'transform 0.5s'
+            })
+            
+          }
+          
+        })
+        $('.photo-last').on('click',function(){
+          photoWidth--;
+          if(photoWidth<0){
+            photoWidth=0
+            return
+            
+            
+          }else{
+            $('.photo-cargo-list').css({
+              'transform':'translate(-'+photoWidth*270+'px,0)',
+              'transition': 'transform 0.5s'
+            })
+            
+          }
+          
+        })
+        $('.sculpture-last').on('click',function(){
+          sculptureWidth--;
+          if(sculptureWidth<0){
+            sculptureWidth=0
+            return
+            
+            
+          }else{
+            $('.sculpture-cargo-list').css({
+              'transform':'translate(-'+sculptureWidth*270+'px,0)',
+              'transition': 'transform 0.5s'
+            })
+            
+          }
+          
+        })
         
         
         

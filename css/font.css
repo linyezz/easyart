@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?2pbgv4');
-  src:  url('../fonts/icomoon.eot?2pbgv4#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?2pbgv4') format('truetype'),
-    url('../fonts/icomoon.woff?2pbgv4') format('woff'),
-    url('../fonts/icomoon.svg?2pbgv4#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?qaw0o1');
+  src:  url('../fonts/icomoon.eot?qaw0o1#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?qaw0o1') format('truetype'),
+    url('../fonts/icomoon.woff?qaw0o1') format('woff'),
+    url('../fonts/icomoon.svg?qaw0o1#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,12 +24,124 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-icon_cn_b:before {
+  content: "\e956";
+}
+.icon-icon_cn_vb:before {
+  content: "\e957";
+  color: #1053ff;
+}
+.icon-icon_cn_w:before {
+  content: "\e958";
+  color: #fff;
+}
+.icon-icon_edit_b:before {
+  content: "\e959";
+}
+.icon-icon_edit_w:before {
+  content: "\e95a";
+  color: #fff;
+}
+.icon-icon_edit:before {
+  content: "\e95b";
+  color: #a39da4;
+}
+.icon-icon_en_b:before {
+  content: "\e95c";
+}
+.icon-icon_en_vb:before {
+  content: "\e95d";
+  color: #1053ff;
+}
+.icon-icon_en_w:before {
+  content: "\e95e";
+  color: #fff;
+}
+.icon-icon_institute_b:before {
+  content: "\e95f";
+}
+.icon-icon_institute_vb:before {
+  content: "\e960";
+  color: #1053ff;
+}
+.icon-icon_institute_w:before {
+  content: "\e961";
+  color: #fff;
+}
+.icon-icon_join_b:before {
+  content: "\e962";
+}
+.icon-icon_join_vb:before {
+  content: "\e963";
+  color: #1053ff;
+}
+.icon-icon_join_w:before {
+  content: "\e964";
+  color: #fff;
+}
+.icon-icon_light_off_mouse_hover .path1:before {
+  content: "\e965";
+  color: rgb(255, 255, 255);
+}
+.icon-icon_light_off_mouse_hover .path2:before {
+  content: "\e966";
+  margin-left: -1em;
+  color: rgb(16, 83, 255);
+}
+.icon-icon_light_off .path1:before {
+  content: "\e967";
+  color: rgb(0, 0, 0);
+}
+.icon-icon_light_off .path2:before {
+  content: "\e968";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-icon_light_on_mouse_hover .path1:before {
+  content: "\e969";
+  color: rgb(255, 255, 255);
+}
+.icon-icon_light_on_mouse_hover .path2:before {
+  content: "\e96a";
+  margin-left: -1em;
+  color: rgb(16, 83, 255);
+}
+.icon-icon_light_on .path1:before {
+  content: "\e96b";
+  color: rgb(255, 255, 255);
+}
+.icon-icon_light_on .path2:before {
+  content: "\e96c";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-icon_upload_b:before {
+  content: "\e96d";
+}
+.icon-icon_upload_vb:before {
+  content: "\e96e";
+  color: #1053ff;
+}
+.icon-icon_upload_w:before {
+  content: "\e96f";
+  color: #fff;
+}
 .icon-icon_x .path1:before {
-  content: "\e954";
+  content: "\e970";
   color: rgb(0, 0, 0);
   opacity: 0.7;
 }
 .icon-icon_x .path2:before {
+  content: "\e971";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-icon_x1 .path1:before {
+  content: "\e954";
+  color: rgb(0, 0, 0);
+  opacity: 0.7;
+}
+.icon-icon_x1 .path2:before {
   content: "\e955";
   margin-left: -1.0205078125em;
   color: rgb(255, 255, 255);
@@ -43,7 +155,7 @@
   margin-left: -0.5458984375em;
   color: rgb(255, 255, 255);
 }
-.icon-icon_upload_w:before {
+.icon-icon_upload_w1:before {
   content: "\e900";
   color: #fff;
 }
@@ -57,7 +169,7 @@
 .icon-icon_print_b:before {
   content: "\e903";
 }
-.icon-icon_upload_b:before {
+.icon-icon_upload_b1:before {
   content: "\e904";
 }
 .icon-icon_form_w_mouse_hover:before {
@@ -103,7 +215,7 @@
   content: "\e90f";
   color: #1053ff;
 }
-.icon-icon_cn_vb:before {
+.icon-icon_cn_vb1:before {
   content: "\e910";
   color: #1053ff;
 }
@@ -248,7 +360,7 @@
 .icon-icon_research_2_b:before {
   content: "\e934";
 }
-.icon-icon_en_w:before {
+.icon-icon_en_w1:before {
   content: "\e935";
   color: #fff;
 }
@@ -260,7 +372,7 @@
   content: "\e937";
   color: #a39da4;
 }
-.icon-icon_en_b:before {
+.icon-icon_en_b1:before {
   content: "\e938";
 }
 .icon-icon_event_date_w:before {
@@ -313,17 +425,17 @@
 .icon-icon_works_b:before {
   content: "\e945";
 }
-.icon-icon_upload_vb:before {
+.icon-icon_upload_vb1:before {
   content: "\e946";
   color: #1053ff;
 }
-.icon-icon_cn_b:before {
+.icon-icon_cn_b1:before {
   content: "\e947";
 }
 .icon-icon_research_1_b:before {
   content: "\e948";
 }
-.icon-icon_en_vb:before {
+.icon-icon_en_vb1:before {
   content: "\e949";
   color: #1053ff;
 }
@@ -346,7 +458,7 @@
   content: "\e94e";
   color: #fff;
 }
-.icon-icon_cn_w:before {
+.icon-icon_cn_w1:before {
   content: "\e94f";
   color: #fff;
 }

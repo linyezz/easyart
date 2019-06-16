@@ -1,0 +1,154 @@
+.page {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.content {
+  width: 1155px;
+  margin-top: 40px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+}
+
+.institute-logo {
+  width: 245px;
+  padding-left: 60px;
+  margin-right: 176px;
+}
+
+.institute-logo img {
+  width: 100%;
+  height: auto;
+}
+
+.institute-info {
+  width: 668px;
+  font-size: 14px;
+  line-height: 24px;
+  position: relative;
+}
+.intro-box {
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+}
+.show-intro{
+  position: relative;
+  overflow: hidden;
+  transition: height 0.5s;
+  widows: 100%;
+}
+.icon-show-intro {
+  width: 24px;
+  font-size: 12px;
+  position: absolute;
+  bottom: -36px;
+  right: 0;
+  cursor: pointer;
+}
+
+.icon-show-intro:hover {
+  color: #1053FF;
+}
+
+.icon-show-intro:active {
+  color: #0032FF;
+}
+.mnu-list{
+  margin-top: 100px;
+  padding-bottom: 15px;
+  width: 100%;
+  border-bottom: 1px solid #A39DA4;
+  text-align: right;
+  padding-right: 12px;
+}
+.icon-change-menu{
+  color: #A39DA4;
+}
+.icon-change-menu:hover{
+  color: #1053FF;
+}
+.icon-change-menu:active{
+  color: #0032FF;
+}
+.production {
+  margin-top: 33px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 103%;
+  
+}
+.production-item {
+  width: 270px;
+  margin-bottom: 27px;
+  height: 270px;
+  margin-right: 27px;
+  position: relative;
+  cursor: pointer;
+}
+.production-item:hover{
+  border: 3px solid #1053FF;
+}
+.production-hover{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  top: 0;
+  left: 0;
+  padding:48px;
+  display: none;
+  
+}
+.production-item img{
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.production-info-price{
+  position: absolute;
+  bottom: 40px;
+  left: 38px;
+  color: #1053FF;
+}
+.institute-list{
+  width: 103%;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.institute-item {
+  width: 30%; 
+  margin-bottom: 32px;
+  margin-right: 3%;
+}
+.institute-img{
+  width: 100%;
+  height: 242px;
+  border: 1px solid #A39DA4;
+  cursor: pointer;
+}
+.institute-img:hover{
+   border: 3px solid #1053FF;
+}
+.institute-item img{
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.institute-name {
+  font-size:16px;
+  font-weight:300;
+  line-height:30px;
+  margin-top: 17px;
+  padding-left: 12px;
+}
